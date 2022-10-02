@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maket</title>
-    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./scss/icons.css">
     <link rel="stylesheet" href="./scss/style.css">
@@ -49,12 +51,30 @@
                             d="M26.4,22.2L23.2,19c0.6-1.1,1-2.5,1-3.8c0-4.5-3.6-8.1-8.1-8.1S8,10.7,8,15.2c0,4.5,3.6,8.1,8.1,8.1  c0,0,0,0,0.1,0c1.3,0,2.7-0.4,3.8-1l3.2,3.2c1,1,2.4,1,3.3,0C27.3,24.6,27.3,23.2,26.4,22.2L26.4,22.2z M16.1,21.4  c-3.4,0-6.2-2.8-6.2-6.2S12.7,9,16.1,9s6.2,2.8,6.2,6.2S19.5,21.4,16.1,21.4z" />
                     </svg>
                 </div>  
-                <div class="header_block2">Demos &#8744;</div>
-                <div class="header_block3">Home &#8744;</div>
-                <div class="header_block4">Catalog &#8744;</div>
-                <div class="header_block5">Account &#8744;</div>
-                <div class="header_block6">Vendor &#8744;</div>
-                <div class="header_block7">Pages &#8744;</div>
+                <div class="header_block2">
+                    Demos
+                    <i class="fi-chevron-down"></i>
+                </div>
+                <div class="header_block3">
+                    Home
+                    <i class="fi-chevron-down"></i>
+                </div>
+                <div class="header_block4">
+                    Catalog
+                    <i class="fi-chevron-down"></i>
+                </div>
+                <div class="header_block5">
+                    Account
+                    <i class="fi-chevron-down"></i>
+                </div>
+                <div class="header_block6">
+                    Vendor
+                    <i class="fi-chevron-down"></i>
+                </div>
+                <div class="header_block7">
+                    Pages
+                    <i class="fi-chevron-down"></i>
+                </div>
                 <div class="header_block8"></div>
                 <div class="header_block9">Sign in</div>
                 <div class="header_block10">+ Add property</div>
@@ -62,22 +82,72 @@
         </header>
         <div class="content">
             <div class="first">
-                <div class="first_block1">
-                    <div class="first_block1_text">Easy way to find <br> a perfect property</div>
-                    <div class="first_block1_desc">We provide a complete service for the sale, purchase or rental of
-                        real estate. We have been operating more than 10 years. Search millions of apartments and houses
-                        on Finder.</div>
+                <div class="row">
+                    <div class="col">
+                        <div class="first_block1">
+                            <div class="first_block1_text">Easy way to find <br> a perfect property</div>
+                            <div class="first_block1_desc">We provide a complete service for the sale, purchase or rental of
+                                real estate. We have been operating more than 10 years. Search millions of apartments and houses
+                                on Finder.</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="first_block2">
+                            <img src="./image/hero-image.jpg" alt="hero-image">
+                        </div>
+                    </div>
                 </div>
-                <div class="first_block2">
-                    <img src="./image/hero-image.jpg" alt="hero-image">
-                </div>
-                <div class="first_block3">
-                    <div class="first_block3_one">For rent</div>
-                    <div class="first_block3_two">Location</div>
-                    <div class="first_block3_three">Property type</div>
-                    <div class="first_block3_four">Price</div>
-                    <div class="first_block3_five">povzunok</div>
-                    <div class="first_block3_six">but</div>
+            </div>
+            <div class="first_block3">
+                <div class="row">
+                    <div class="col">
+                        <div class="first_block3_one1">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="first_block3_one">
+                                        <i class="fi-home me-2"></i>
+                                        For rent
+                                        <i class="fi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="first_block3_two">
+                                        <i class="fi-map-pin me-2"></i>
+                                        Location
+                                        <i class="fi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="first_block3_three">
+                                        <i class="fi-list me-2"></i>
+                                        Property type
+                                        <i class="fi-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="first_block3_one2">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="first_block3_four">
+                                        <i class="fi-cash fs-lg text-muted me-2"></i>
+                                        Price
+                                        <i class="fi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="first_block3_five">povzunok</div>
+                                </div>
+                                <div class="col">
+                                    <button class="first_block3_six">
+                                        <i class="fi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="second">
@@ -627,9 +697,9 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="baner_footer">
-                <div class="baner_left">
-                    <div class="baner_left_block1">
+            <div class="first_footer">
+                <div class="first_left">
+                    <div class="first_left_block1">
                         <svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" viewBox="0 0 116 32" style="enable-background:new 0 0 116 32;" xml:space="preserve">
@@ -671,8 +741,8 @@
                             <div class="messendger_bl4"><img src="./image/telegram1.png" alt="telegram"></div>
                         </div>
                     </div>
-                    <div class="baner_left_block2">
-                        <div class="baner_name1">Quick Links</div>
+                    <div class="first_left_block2">
+                        <div class="first_name1">Quick Links</div>
                         <ul>
                             <li>Buy a property</li>
                             <li>Sell a property</li>
@@ -682,8 +752,8 @@
                             <li>Top cities</li>
                         </ul>
                     </div>
-                    <div class="baner_left_block3">
-                        <div class="baner_name2">About</div>
+                    <div class="first_left_block3">
+                        <div class="first_name2">About</div>
                         <ul>
                             <li>About Us</li>
                             <li>Our agents</li>
@@ -693,23 +763,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="baner_right">
-                    <div class="baner_name3">Recent Posts</div>
-                    <div class="baner_right_block1">
-                        <div class="baner_right_block1_image">
+                <div class="first_right">
+                    <div class="first_name3">Recent Posts</div>
+                    <div class="first_right_block1">
+                        <div class="first_right_block1_image">
                             <img src="./image/th01.jpg" alt="th01">
                         </div>
-                        <div class="baner_right_block1_text">
-                            <div class="baner_right_block1_text_top">HOME IMPROVEMENT</div>
-                            <div class="baner_right_block1_text_name">Your Guide to a Smart Apartment Searching</div>
-                            <div class="baner_right_block1_text_desc">Mi justo, varius vitae cursus ipsum sem massa amet
+                        <div class="first_right_block1_text">
+                            <div class="first_right_block1_text_top">HOME IMPROVEMENT</div>
+                            <div class="first_right_block1_text_name">Your Guide to a Smart Apartment Searching</div>
+                            <div class="first_right_block1_text_desc">Mi justo, varius vitae cursus ipsum sem massa amet
                                 pellentesque. Ipsum enim sit nulla ridiculus semper nam...</div>
-                            <div class="baner_right_block1_text_bottom">
-                                <div class="baner_right_block1_text_bottom1">
+                            <div class="first_right_block1_text_bottom">
+                                <div class="first_right_block1_text_bottom1">
                                     <i class="fi-calendar mt-n1 me-1 fs-sm align-middle opacity-70"></i>
                                     Dec 4
                                 </div>
-                                <div class="baner_right_block1_text_bottom2">
+                                <div class="first_right_block1_text_bottom2">
                                     <i class="fi-chat-circle mt-n1 me-1 fs-sm align-middle opacity-70"></i>
                                     2 comments
                                 </div>
@@ -717,21 +787,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="baner_right_block2">
-                        <div class="baner_right_block2_image">
+                    <div class="first_right_block2">
+                        <div class="first_right_block2_image">
                             <img src="./image/th02.jpg" alt="th02">
                         </div>
-                        <div class="baner_right_block2_text">
-                            <div class="baner_right_block2_text_top">TIPS & ADVICE</div>
-                            <div class="baner_right_block2_text_name">Top 10 Ways to Refresh Your Space</div>
-                            <div class="baner_right_block2_text_desc">Volutpat, orci, vitae arcu feugiat vestibulum
+                        <div class="first_right_block2_text">
+                            <div class="first_right_block2_text_top">TIPS & ADVICE</div>
+                            <div class="first_right_block2_text_name">Top 10 Ways to Refresh Your Space</div>
+                            <div class="first_right_block2_text_desc">Volutpat, orci, vitae arcu feugiat vestibulum
                                 ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</div>
-                            <div class="baner_right_block2_text_bottom">
-                                <div class="baner_right_block2_text_bottom1">
+                            <div class="first_right_block2_text_bottom">
+                                <div class="first_right_block2_text_bottom1">
                                     <i class="fi-calendar mt-n1 me-1 fs-sm align-middle opacity-70"></i>
                                     Nov 23
                                 </div>
-                                <div class="baner_right_block2_text_bottom2">
+                                <div class="first_right_block2_text_bottom2">
                                     <i class="fi-chat-circle mt-n1 me-1 fs-sm align-middle opacity-70"></i>
                                     No comments
                                 </div>

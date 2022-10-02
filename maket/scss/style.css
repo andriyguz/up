@@ -100,91 +100,71 @@ body .container .content {
 body .container .content .first {
   display: grid;
 }
-body .container .content .first .first_block1 {
-  width: 570px;
-  height: auto;
-  grid-column: 1/2;
-  grid-row: 1/2;
+body .container .content .first .row .col .first_block1 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
 }
-body .container .content .first .first_block1 .first_block1_text {
-  margin-top: 155px;
-  font-size: 60px;
-  font-weight: 600;
-  text-align: left;
+body .container .content .first .row .col .first_block1 .first_block1_text {
+  width: 100%;
+  height: 50%;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
 }
-body .container .content .first .first_block1 .first_block1_desc {
-  font-size: 22px;
-  text-align: left;
+body .container .content .first .row .col .first_block1 .first_block1_desc {
+  width: 100%;
+  height: 50%;
+  font-size: 1.25rem;
 }
-body .container .content .first .first_block2 {
-  width: 570px;
-  height: auto;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-body .container .content .first .first_block2 img {
+body .container .content .first .row .col .first_block2 img {
   width: 100%;
 }
-body .container .content .first .first_block3 {
-  grid-column: 1/3;
-  grid-row: 2/3;
-  display: flex;
+body .container .content .first_block3 {
+  display: grid;
+  width: 100%;
+  height: 4rem;
 }
-body .container .content .first .first_block3 .first_block3_one {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_one {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
 }
-body .container .content .first .first_block3 .first_block3_two {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_two {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
 }
-body .container .content .first .first_block3 .first_block3_three {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_three {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
 }
-body .container .content .first .first_block3 .first_block3_four {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_four {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
 }
-body .container .content .first .first_block3 .first_block3_five {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_five {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
 }
-body .container .content .first .first_block3 .first_block3_six {
-  width: 150px;
-  height: 75px;
-  margin-top: 25px;
-  font-size: 19px;
+body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_six {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   opacity: 0.5;
+}
+body .container .content .first_block3 .row .col {
+  position: relative;
 }
 body .container .content .second {
   display: flex;
@@ -921,13 +901,15 @@ body .container .content .seventh {
   flex-flow: row;
 }
 body .container .content .seventh .seventh_image {
-  width: 700px;
+  width: 30%;
   height: auto;
 }
 body .container .content .seventh .seventh_image img {
   width: 100%;
 }
 body .container .content .seventh .seventh_text {
+  width: 70%;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin-left: 50px;
@@ -1233,53 +1215,53 @@ body .container footer {
   max-width: 1140px;
   grid-area: footer;
 }
-body .container footer .baner_footer {
+body .container footer .first_footer {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
 }
-body .container footer .baner_footer .baner_left {
+body .container footer .first_footer .first_left {
   display: flex;
   width: 600px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 {
+body .container footer .first_footer .first_left .first_left_block1 {
   width: 34%;
   margin: 10px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 img {
+body .container footer .first_footer .first_left .first_left_block1 img {
   height: 100px;
   width: 200px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 ul {
+body .container footer .first_footer .first_left .first_left_block1 ul {
   list-style-type: none;
   margin-top: 15px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 .messendger {
+body .container footer .first_footer .first_left .first_left_block1 .messendger {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 15px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 .messendger .messendger_bl1 img {
+body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl1 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 .messendger .messendger_bl2 img {
+body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl2 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 .messendger .messendger_bl3 img {
+body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl3 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block1 .messendger .messendger_bl4 img {
+body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl4 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block2 {
+body .container footer .first_footer .first_left .first_left_block2 {
   width: 33%;
 }
-body .container footer .baner_footer .baner_left .baner_left_block2 .baner_name1 {
+body .container footer .first_footer .first_left .first_left_block2 .first_name1 {
   height: 54px;
   font-size: 19px;
   font-weight: 700;
@@ -1287,15 +1269,15 @@ body .container footer .baner_footer .baner_left .baner_left_block2 .baner_name1
   padding-top: 20px;
   padding-left: 40px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block2 ul {
+body .container footer .first_footer .first_left .first_left_block2 ul {
   list-style-type: none;
   font-size: 16px;
   margin-top: 15px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block3 {
+body .container footer .first_footer .first_left .first_left_block3 {
   width: 33%;
 }
-body .container footer .baner_footer .baner_left .baner_left_block3 .baner_name2 {
+body .container footer .first_footer .first_left .first_left_block3 .first_name2 {
   height: 54px;
   font-size: 19px;
   font-weight: 700;
@@ -1303,17 +1285,17 @@ body .container footer .baner_footer .baner_left .baner_left_block3 .baner_name2
   padding-top: 20px;
   padding-left: 40px;
 }
-body .container footer .baner_footer .baner_left .baner_left_block3 ul {
+body .container footer .first_footer .first_left .first_left_block3 ul {
   list-style-type: none;
   font-size: 16px;
   margin-top: 15px;
 }
-body .container footer .baner_footer .baner_right {
+body .container footer .first_footer .first_right {
   display: flex;
   width: 540px;
   flex-direction: column;
 }
-body .container footer .baner_footer .baner_right .baner_name3 {
+body .container footer .first_footer .first_right .first_name3 {
   height: 54px;
   font-size: 19px;
   font-weight: 700;
@@ -1321,88 +1303,88 @@ body .container footer .baner_footer .baner_right .baner_name3 {
   padding-top: 20px;
   margin-bottom: 15px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 {
+body .container footer .first_footer .first_right .first_right_block1 {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_image {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_image {
   width: 250px;
   height: 250px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_image img {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_image img {
   width: 100%;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text {
   display: flex;
   flex-direction: column;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_top {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_top {
   font-size: 14px;
   color: coral;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_name {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_name {
   font-size: 16px;
   font-weight: 700;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_desc {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_desc {
   font-size: 14px;
   opacity: 0.7;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_bottom {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom {
   display: flex;
   flex-flow: row;
   gap: 15px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_bottom .baner_right_block1_text_bottom1 {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom1 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block1 .baner_right_block1_text .baner_right_block1_text_bottom .baner_right_block1_text_bottom2 {
+body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom2 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 {
+body .container footer .first_footer .first_right .first_right_block2 {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_image {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_image {
   width: 250px;
   height: 250px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_image img {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_image img {
   width: 100%;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text {
   display: flex;
   flex-direction: column;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_top {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_top {
   font-size: 14px;
   color: coral;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_name {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_name {
   font-size: 16px;
   font-weight: 700;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_desc {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_desc {
   font-size: 14px;
   opacity: 0.7;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_bottom {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom {
   display: flex;
   flex-flow: row;
   gap: 15px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_bottom .baner_right_block2_text_bottom1 {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom1 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .baner_footer .baner_right .baner_right_block2 .baner_right_block2_text .baner_right_block2_text_bottom .baner_right_block2_text_bottom2 {
+body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom2 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
