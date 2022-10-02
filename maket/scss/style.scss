@@ -47,6 +47,16 @@
     font-weight: 700;
     margin: 32px 0 0 0;
 }
+@mixin block3 {
+    width: auto;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 body{
     .container{
         display: grid;
@@ -163,31 +173,34 @@ body{
                 width: 100%;
                 height: 4rem;
                 .row{
+                    width: auto;
+                    height: 100%;
                     .col{
                         .first_block3_one1{
+                            width: auto;
+                            height: 100%;
                             .row{
+                                width: auto;
+                                height: 100%;
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_one{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_two{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_three{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                             }
@@ -195,29 +208,30 @@ body{
                     }
                     .col{
                         .first_block3_one2{
+                            width: auto;
+                            height: 100%;
                             .row{
+                                width: auto;
+                                height: 100%;
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_four{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_five{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                                 .col{
+                                    width: auto;
+                                    height: 100%;
                                     .first_block3_six{
-                                        font-size: 1.25rem;
-                                        font-weight: 600;
-                                        text-align: center;
-                                        opacity: 0.5;
+                                        @include block3;
                                     }
                                 }
                             }  
@@ -226,6 +240,9 @@ body{
                     .col{
                         position: relative;
                     }
+                    .fi-chevron-down{
+                        font-size: 0.7rem;
+                    }
                 }
             }
             .second{
@@ -233,6 +250,7 @@ body{
                 flex-wrap: wrap;
                 height: 100px;
                 width: 100%;
+                margin-top: 2rem;
                 .second_block1{
                     display: flex;
                     flex-direction: column;
