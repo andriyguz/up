@@ -1,7 +1,7 @@
 @mixin button {
-    height: 49px;
+    height: 3rem;
     display: flex;
-    font-size: 19px;
+    font-size: 1.1rem;
     font-weight: 600;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,21 @@
     font-weight: 700;
     text-align: center;
     color: black;
+}
+@mixin thirdname {
+    height: 3rem;
+    width: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+@mixin thirddesc {
+    height: 5rem;
+    width: auto;
+    font-size: 1rem;
+    opacity: 0.7;
+    text-align: center;
 }
 body{
     .container{
@@ -254,7 +269,7 @@ body{
             .second{
                 height: 100px;
                 width: 100%;
-                margin-top: 2rem;
+                margin: 2rem 0 2rem 0;
                 .row{
                     .col-2{
                         .second_block1{
@@ -505,332 +520,340 @@ body{
                 }   
             }
             .third{
-                display: flex;
-                flex-wrap: wrap;
-                height: 500px;
-                padding: 30px 2% 0 2%;
-                gap: 20px;
-                .third_block1{
-                    display: flex;
-                    flex-direction: column;
-                    width: 32%;
-                    .third_block1_image{
-                        img{
+                width: 100%;
+                height: auto;
+                padding: 30px 5% 30px 5%;
+                .row{
+                    .col{
+                        .third_block1{
+                            display: flex;
+                            flex-direction: column;
                             width: 100%;
+                            height: auto;
+                            color: black;
+                            text-decoration: none;
+                            .third_block1_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .third_block1_name{
+                                p{
+                                    @include thirdname;
+                                }
+                            }
+                            .third_block1_desc{
+                                p{
+                                    @include thirddesc;
+                                }
+                            }
+                            .third_block1_button{
+                                display: flex;
+                                justify-content: center;
+                                button{
+                                    @include button;
+                                }
+                                button:hover{
+                                    @include button;
+                                    background: coral;
+                                    color: white;
+                                }
+                            }
                         }
                     }
-                    .third_block1_name{
-                        p{
-                            height: 50px;
-                            font-size: 30px;
-                            font-weight: 600;
-                            text-align: center;
-                            padding-top: 10px;
-                        }
-                    }
-                    .third_block1_desc{
-                        p{
-                            height: 80px;
-                            font-size: 15px;
-                            opacity: 0.7;
-                            text-align: center;
-                        }
-                    }
-                    .third_block1_button{
-                        padding: 0 100px 0 100px;
-                        button{
-                            @include button;
-                        }
-                        button:hover{
-                            @include button;
-                            background: coral;
-                            color: white;
-                        }
-                    }
-                }
-                .third_block2{
-                    display: flex;
-                    flex-direction: column;
-                    width: 32%;
-                    .third_block2_image{
-                        img{
+                    .col{
+                        .third_block2{
+                            display: flex;
+                            flex-direction: column;
                             width: 100%;
+                            height: auto;
+                            color: black;
+                            text-decoration: none;
+                            .third_block2_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .third_block2_name{
+                                p{
+                                    @include thirdname;
+                                }
+                            }
+                            .third_block2_desc{
+                                p{
+                                    @include thirddesc;
+                                }
+                            }
+                            .third_block2_button{
+                                display: flex;
+                                justify-content: center;
+                                button{
+                                    @include button;
+                                }
+                                button:hover{
+                                    @include button;
+                                    background: coral;
+                                    color: white;
+                                }
+                            }
                         }
                     }
-                    .third_block2_name{
-                        p{
-                            height: 50px;
-                            font-size: 30px;
-                            font-weight: 600;
-                            text-align: center;
-                            padding-top: 10px;
-                        }
-                    }
-                    .third_block2_desc{
-                        p{
-                            height: 80px;
-                            font-size: 15px;
-                            opacity: 0.7;
-                            text-align: center;
-                        }
-                    }
-                    .third_block2_button{
-                        padding: 0 100px 0 100px;
-                        button{
-                            @include button;
-                        }
-                        button:hover{
-                            @include button;
-                            background: coral;
-                            color: white;
-                        }
-                    }
-                }
-                .third_block3{
-                    display: flex;
-                    flex-direction: column;
-                    width: 32%;
-                    .third_block3_image{
-                        img{
+                    .col{
+                        .third_block3{
+                            display: flex;
+                            flex-direction: column;
                             width: 100%;
+                            height: auto;
+                            color: black;
+                            text-decoration: none;
+                            .third_block3_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .third_block3_name{
+                                p{
+                                    @include thirdname;
+                                }
+                            }
+                            .third_block3_desc{
+                                p{
+                                    @include thirddesc;
+                                }
+                            }
+                            .third_block3_button{
+                                display: flex;
+                                justify-content: center;
+                                button{
+                                    @include button;
+                                }
+                                button:hover{
+                                    @include button;
+                                    background: coral;
+                                    color: white;
+                                }
+                            }
                         }
                     }
-                    .third_block3_name{
-                        p{
-                            height: 50px;
-                            font-size: 30px;
-                            font-weight: 600;
-                            text-align: center;
-                            padding-top: 10px;
-                        }
-                    }
-                    .third_block3_desc{
-                        p{
-                            height: 80px;
-                            font-size: 15px;
-                            opacity: 0.7;
-                            text-align: center;
-                        }
-                    }
-                    .third_block3_button{
-                        padding: 0 100px 0 100px;
-                        button{
-                            @include button;
-                        }
-                        button:hover{
-                            @include button;
-                            background: coral;
-                            color: white;
-                        }
-                    }
-                }
+                }   
             }
             .fourth_name{
                 display: block;
                 margin: 35px 0 20px 0;
                 .fourth_name_h1{
-                    font-size: 32px;
+                    font-size: 2rem;
                     font-weight: 700;
                     text-align: left;
                 }
             }
             .fourth{
-                display: flex;
-                flex-wrap: wrap;
-                flex-flow: row;
+                width: 100%;
                 height: 400px;
-                gap: 15px;
-                    .col-md-3{
-                        position: relative;
-                    }
-                    .fourth_block1{
-                        display: flex;
-                        flex-direction: column;
-                    .fourth_block1_image{
-                        img{
-                            width: 100%;
+                .row{
+                    .col{
+                        .fourth_block1{
+                            display: flex;
+                            flex-direction: column;
+                        .fourth_block1_image{
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
                         }
-                    }
-                    .fourth_block1_text{
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 15px;
-                        .fourth_block1_text_for{
-                            font-size: 14px;
-                            color: coral;
+                        .fourth_block1_text{
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 15px;
+                            .fourth_block1_text_for{
+                                font-size: 0.9rem;
+                                color: coral;
+                            }
+                            .fourth_block1_text_name{
+                                font-size: 1rem;
+                                font-weight: 600;
+                            }
+                            .fourth_block1_text_desc{
+                                font-size: 0.9rem;
+                                opacity: 0.5;
+                            }
+                            .fourth_block1_text_price{
+                                font-size: 1rem;
+                                font-weight: 600;
+                                opacity: 0.7;
+                            }
                         }
-                        .fourth_block1_text_name{
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                        .fourth_block1_text_desc{
-                            font-size: 14px;
-                            opacity: 0.5;
-                        }
-                        .fourth_block1_text_price{
-                            font-size: 16px;
-                            font-weight: 600;
+                        .fourth_block1_content{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            font-size: 0.9rem;
                             opacity: 0.7;
+                            .fourth_block1_content1{
+                                padding-right: 10px;
+                            }
+                            .fourth_block1_content2{
+                                padding: 0 5px 0 5px;
+                            }
+                            .fourth_block1_content3{
+                                padding-left: 10px;
+                            }
                         }
                     }
-                    .fourth_block1_content{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        font-size: 14px;
-                        opacity: 0.7;
-                        .fourth_block1_content1{
-                            padding-right: 10px;
-                        }
-                        .fourth_block1_content2{
-                            padding: 0 5px 0 5px;
-                        }
-                        .fourth_block1_content3{
-                            padding-left: 10px;
+                    }
+                    .col{
+                        .fourth_block2{
+                            display: flex;
+                            flex-direction: column;
+                            .fourth_block2_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .fourth_block2_text{
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 15px;
+                                .fourth_block2_text_for{
+                                    font-size: 0.9rem;
+                                    color: coral;
+                                }
+                                .fourth_block2_text_name{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                }
+                                .fourth_block2_text_desc{
+                                    font-size: 0.9rem;
+                                    opacity: 0.5;
+                                }
+                                .fourth_block2_text_price{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    opacity: 0.7;
+                                }
+                            }
+                            .fourth_block2_content{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                font-size: 0.9rem;
+                                opacity: 0.7;
+                                .fourth_block2_content1{
+                                    padding-right: 10px;
+                                }
+                                .fourth_block2_content2{
+                                    padding: 0 5px 0 5px;
+                                }
+                                .fourth_block2_content3{
+                                    padding-left: 10px;
+                                }
+                            }
                         }
                     }
-                }
-                .fourth_block2{
-                    display: flex;
-                    flex-direction: column;
-                    .fourth_block2_image{
-                        img{
-                            width: 100%;
+                    .col{
+                        .fourth_block3{
+                            display: flex;
+                            flex-direction: column;
+                            .fourth_block3_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .fourth_block3_text{
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 15px;
+                                .fourth_block3_text_for{
+                                    font-size: 0.9rem;
+                                    color: coral;
+                                }
+                                .fourth_block3_text_name{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                }
+                                .fourth_block3_text_desc{
+                                    font-size: 0.9rem;
+                                    opacity: 0.5;
+                                }
+                                .fourth_block3_text_price{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    opacity: 0.7;
+                                }
+                            }
+                            .fourth_block3_content{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                font-size: 0.9rem;
+                                opacity: 0.7;
+                                .fourth_block3_content1{
+                                    padding-right: 10px;
+                                }
+                                .fourth_block3_content2{
+                                    padding: 0 5px 0 5px;
+                                }
+                                .fourth_block3_content3{
+                                    padding-left: 10px;
+                                }
+                            }
                         }
                     }
-                    .fourth_block2_text{
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 15px;
-                        .fourth_block2_text_for{
-                            font-size: 14px;
-                            color: coral;
-                        }
-                        .fourth_block2_text_name{
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                        .fourth_block2_text_desc{
-                            font-size: 14px;
-                            opacity: 0.5;
-                        }
-                        .fourth_block2_text_price{
-                            font-size: 16px;
-                            font-weight: 600;
-                            opacity: 0.7;
-                        }
-                    }
-                    .fourth_block2_content{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        font-size: 14px;
-                        opacity: 0.7;
-                        .fourth_block2_content1{
-                            padding-right: 10px;
-                        }
-                        .fourth_block2_content2{
-                            padding: 0 5px 0 5px;
-                        }
-                        .fourth_block2_content3{
-                            padding-left: 10px;
-                        }
-                    }
-                }
-                .fourth_block3{
-                    display: flex;
-                    flex-direction: column;
-                    .fourth_block3_image{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .fourth_block3_text{
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 15px;
-                        .fourth_block3_text_for{
-                            font-size: 14px;
-                            color: coral;
-                        }
-                        .fourth_block3_text_name{
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                        .fourth_block3_text_desc{
-                            font-size: 14px;
-                            opacity: 0.5;
-                        }
-                        .fourth_block3_text_price{
-                            font-size: 16px;
-                            font-weight: 600;
-                            opacity: 0.7;
+                    .col{
+                        .fourth_block4{
+                            display: flex;
+                            flex-direction: column;
+                            .fourth_block4_image{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .fourth_block4_text{
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 15px;
+                                .fourth_block4_text_for{
+                                    font-size: 0.9rem;
+                                    color: coral;
+                                }
+                                .fourth_block4_text_name{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                }
+                                .fourth_block4_text_desc{
+                                    font-size: 0.9rem;
+                                    opacity: 0.5;
+                                }
+                                .fourth_block4_text_price{
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    opacity: 0.7;
+                                }
+                            }
+                            .fourth_block4_content{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                font-size: 0.9rem;
+                                opacity: 0.7;
+                                .fourth_block4_content1{
+                                    padding-right: 10px;
+                                }
+                                .fourth_block4_content2{
+                                    padding: 0 5px 0 5px;
+                                }
+                                .fourth_block4_content3{
+                                    padding-left: 10px;
+                                }
+                            }
                         }
                     }
-                    .fourth_block3_content{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        font-size: 14px;
-                        opacity: 0.7;
-                        .fourth_block3_content1{
-                            padding-right: 10px;
-                        }
-                        .fourth_block3_content2{
-                            padding: 0 5px 0 5px;
-                        }
-                        .fourth_block3_content3{
-                            padding-left: 10px;
-                        }
-                    }
-                }
-                .fourth_block4{
-                    display: flex;
-                    flex-direction: column;
-                    .fourth_block4_image{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .fourth_block4_text{
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 15px;
-                        .fourth_block4_text_for{
-                            font-size: 14px;
-                            color: coral;
-                        }
-                        .fourth_block4_text_name{
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                        .fourth_block4_text_desc{
-                            font-size: 14px;
-                            opacity: 0.5;
-                        }
-                        .fourth_block4_text_price{
-                            font-size: 16px;
-                            font-weight: 600;
-                            opacity: 0.7;
-                        }
-                    }
-                    .fourth_block4_content{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        font-size: 14px;
-                        opacity: 0.7;
-                        .fourth_block4_content1{
-                            padding-right: 10px;
-                        }
-                        .fourth_block4_content2{
-                            padding: 0 5px 0 5px;
-                        }
-                        .fourth_block4_content3{
-                            padding-left: 10px;
-                        }
-                    }
-                }
+                }    
             }
             .fifth{
                 display: flex;
