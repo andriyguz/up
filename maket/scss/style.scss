@@ -19,7 +19,7 @@
     align-items: center;
     color: coral;
     border: 1px solid coral;
-    margin: 5px 54px;
+    margin: 5px 0 5px 0;
     border-radius: 33px;
 }
 @mixin fifth {
@@ -56,6 +56,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin second {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
 }
 body{
     .container{
@@ -136,7 +144,6 @@ body{
             max-width: 1140px;
             grid-area: content;
             .first{
-                display: grid;
                 .row{
                     .col{
                         .first_block1{
@@ -169,7 +176,6 @@ body{
                 } 
             }
             .first_block3{
-                display: grid;
                 width: 100%;
                 height: 4rem;
                 .row{
@@ -246,191 +252,257 @@ body{
                 }
             }
             .second{
-                display: flex;
-                flex-wrap: wrap;
                 height: 100px;
                 width: 100%;
                 margin-top: 2rem;
-                .second_block1{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block1_content{
-                        @include content;
+                .row{
+                    .col-2{
+                        .second_block1{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block1_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block1_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block1_text{
+                                @include second;
+                            }
+                        }
+                        .second_block1:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block1_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block1_text{
+                                @include second;
+                            }
+                        }
                     }
-                    .second_block1_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
+                    .col-2{
+                        .second_block2{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block2_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block2_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block2_text{
+                                @include second;
+                            }
+                        }
+                        .second_block2:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block2_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block2_text{
+                                @include second;
+                            }
+                        }
                     }
-                }
-                .second_block1:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block1_content{
-                        @include content;
-                        color: white;
-                        background: coral;
+                    .col-2{
+                        .second_block3{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block3_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block3_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block3_text{
+                                @include second;
+                            }
+                        }
+                        .second_block3:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block3_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block3_text{
+                                @include second;
+                            }
+                        }
                     }
-                    .second_block1_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
+                    .col-2{
+                        .second_block4{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block4_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block4_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block4_text{
+                                @include second;
+                            }
+                        }
+                        .second_block4:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block4_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block4_text{
+                                @include second;
+                            }
+                        }
                     }
-                }
-                .second_block2{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block2_content{
-                        @include content;
+                    .col-2{
+                        .second_block5{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block5_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block5_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block5_text{
+                                @include second;
+                            }
+                        }
+                        .second_block5:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block5_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block5_text{
+                                @include second;
+                            }
+                        }
                     }
-                    .second_block2_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
+                    .col-2{
+                        .second_block6{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: none;
+                            background: white;
+                            text-decoration: none;
+                            .second_block6_1{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: center;
+                                .second_block6_content{
+                                    @include content;
+                                }
+                            }
+                            .second_block6_text{
+                                @include second;
+                            }
+                        }
+                        .second_block6:hover{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+                            border: 3px solid rgb(231, 228, 228);
+                            border-radius: 10px;
+                            background: white;
+                            text-decoration: none;
+                            .second_block6_content{
+                                @include content;
+                                color: white;
+                                background: coral;
+                            }
+                            .second_block6_text{
+                                @include second;
+                            }
+                        }
                     }
-                }
-                .second_block2:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block2_content{
-                        @include content;
-                        color: white;
-                        background: coral;
-                    }
-                    .second_block2_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block3{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block3_content{
-                        @include content;
-                    }
-                    .second_block3_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block3:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block3_content{
-                        @include content;
-                        color: white;
-                        background: coral;
-                    }
-                    .second_block3_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block4{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block4_content{
-                        @include content;
-                    }
-                    .second_block4_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block4:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block4_content{
-                        @include content;
-                        color: white;
-                        background: coral;
-                    }
-                    .second_block4_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block5{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block5_content{
-                        @include content;
-                    }
-                    .second_block5_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block5:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block5_content{
-                        @include content;
-                        color: white;
-                        background: coral;
-                    }
-                    .second_block5_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block6{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    .second_block6_content{
-                        @include content;
-                    }
-                    .second_block6_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
-                .second_block6:hover{
-                    display: flex;
-                    flex-direction: column;
-                    width: 16%;
-                    border: 3px solid rgb(231, 228, 228);
-                    border-radius: 10px;
-                    .second_block6_content{
-                        @include content;
-                        color: white;
-                        background: coral;
-                    }
-                    .second_block6_text{
-                        font-size: 19px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-                }
+                }   
             }
             .third{
                 display: flex;

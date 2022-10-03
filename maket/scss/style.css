@@ -97,9 +97,6 @@ body .container .content {
   max-width: 1140px;
   grid-area: content;
 }
-body .container .content .first {
-  display: grid;
-}
 body .container .content .first .row .col .first_block1 {
   display: flex;
   flex-flow: column;
@@ -123,7 +120,6 @@ body .container .content .first .row .col .first_block2 img {
   width: 100%;
 }
 body .container .content .first_block3 {
-  display: grid;
   width: 100%;
   height: 4rem;
 }
@@ -238,18 +234,26 @@ body .container .content .first_block3 .row .fi-chevron-down {
   font-size: 0.7rem;
 }
 body .container .content .second {
-  display: flex;
-  flex-wrap: wrap;
   height: 100px;
   width: 100%;
   margin-top: 2rem;
 }
-body .container .content .second .second_block1 {
+body .container .content .second .row .col-2 .second_block1 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block1 .second_block1_content {
+body .container .content .second .row .col-2 .second_block1 .second_block1_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block1 .second_block1_1 .second_block1_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -258,22 +262,28 @@ body .container .content .second .second_block1 .second_block1_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block1 .second_block1_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block1 .second_block1_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block1:hover {
+body .container .content .second .row .col-2 .second_block1:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block1:hover .second_block1_content {
+body .container .content .second .row .col-2 .second_block1:hover .second_block1_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -282,22 +292,35 @@ body .container .content .second .second_block1:hover .second_block1_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block1:hover .second_block1_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block1:hover .second_block1_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block2 {
+body .container .content .second .row .col-2 .second_block2 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block2 .second_block2_content {
+body .container .content .second .row .col-2 .second_block2 .second_block2_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block2 .second_block2_1 .second_block2_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -306,22 +329,28 @@ body .container .content .second .second_block2 .second_block2_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block2 .second_block2_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block2 .second_block2_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block2:hover {
+body .container .content .second .row .col-2 .second_block2:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block2:hover .second_block2_content {
+body .container .content .second .row .col-2 .second_block2:hover .second_block2_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -330,22 +359,35 @@ body .container .content .second .second_block2:hover .second_block2_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block2:hover .second_block2_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block2:hover .second_block2_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block3 {
+body .container .content .second .row .col-2 .second_block3 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block3 .second_block3_content {
+body .container .content .second .row .col-2 .second_block3 .second_block3_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block3 .second_block3_1 .second_block3_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -354,22 +396,28 @@ body .container .content .second .second_block3 .second_block3_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block3 .second_block3_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block3 .second_block3_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block3:hover {
+body .container .content .second .row .col-2 .second_block3:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block3:hover .second_block3_content {
+body .container .content .second .row .col-2 .second_block3:hover .second_block3_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -378,22 +426,35 @@ body .container .content .second .second_block3:hover .second_block3_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block3:hover .second_block3_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block3:hover .second_block3_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block4 {
+body .container .content .second .row .col-2 .second_block4 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block4 .second_block4_content {
+body .container .content .second .row .col-2 .second_block4 .second_block4_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block4 .second_block4_1 .second_block4_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -402,22 +463,28 @@ body .container .content .second .second_block4 .second_block4_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block4 .second_block4_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block4 .second_block4_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block4:hover {
+body .container .content .second .row .col-2 .second_block4:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block4:hover .second_block4_content {
+body .container .content .second .row .col-2 .second_block4:hover .second_block4_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -426,22 +493,35 @@ body .container .content .second .second_block4:hover .second_block4_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block4:hover .second_block4_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block4:hover .second_block4_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block5 {
+body .container .content .second .row .col-2 .second_block5 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block5 .second_block5_content {
+body .container .content .second .row .col-2 .second_block5 .second_block5_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block5 .second_block5_1 .second_block5_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -450,22 +530,28 @@ body .container .content .second .second_block5 .second_block5_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block5 .second_block5_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block5 .second_block5_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block5:hover {
+body .container .content .second .row .col-2 .second_block5:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block5:hover .second_block5_content {
+body .container .content .second .row .col-2 .second_block5:hover .second_block5_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -474,22 +560,35 @@ body .container .content .second .second_block5:hover .second_block5_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block5:hover .second_block5_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block5:hover .second_block5_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block6 {
+body .container .content .second .row .col-2 .second_block6 {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block6 .second_block6_content {
+body .container .content .second .row .col-2 .second_block6 .second_block6_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+body .container .content .second .row .col-2 .second_block6 .second_block6_1 .second_block6_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -498,22 +597,28 @@ body .container .content .second .second_block6 .second_block6_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
 }
-body .container .content .second .second_block6 .second_block6_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block6 .second_block6_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
-body .container .content .second .second_block6:hover {
+body .container .content .second .row .col-2 .second_block6:hover {
   display: flex;
   flex-direction: column;
-  width: 16%;
+  width: 100%;
+  height: auto;
   border: 3px solid rgb(231, 228, 228);
   border-radius: 10px;
+  background: white;
+  text-decoration: none;
 }
-body .container .content .second .second_block6:hover .second_block6_content {
+body .container .content .second .row .col-2 .second_block6:hover .second_block6_content {
   height: 70px;
   width: 70px;
   display: flex;
@@ -522,15 +627,18 @@ body .container .content .second .second_block6:hover .second_block6_content {
   align-items: center;
   color: coral;
   border: 1px solid coral;
-  margin: 5px 54px;
+  margin: 5px 0 5px 0;
   border-radius: 33px;
   color: white;
   background: coral;
 }
-body .container .content .second .second_block6:hover .second_block6_text {
-  font-size: 19px;
-  font-weight: 600;
+body .container .content .second .row .col-2 .second_block6:hover .second_block6_text {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
+  color: black;
 }
 body .container .content .third {
   display: flex;
