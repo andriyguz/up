@@ -6,91 +6,88 @@ body .container header {
   width: 1140px;
   max-width: 1140px;
   grid-area: header;
+  position: fixed;
+  background: white;
 }
-body .container header .header_block {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-}
-body .container header .header_block .header_block1 {
-  display: flex;
-  width: 10%;
-}
-body .container header .header_block .header_block1 img {
+body .container header .navbar navbar-expand-lg bg-light {
   width: 100%;
+  height: auto;
 }
-body .container header .header_block .header_block2 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid {
+  width: 100%;
+  height: auto;
+}
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .navbar-brand {
+  width: 8rem;
+  height: auto;
+}
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block3 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block4 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block5 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block6 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block7 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .header_block .header_block8 {
-  display: flex;
-  width: 5%;
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
+  width: auto;
 }
-body .container header .header_block .header_block9 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
   display: flex;
-  width: 10%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
   color: coral;
 }
-body .container header .header_block .header_block10 {
+body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
   display: flex;
-  width: 15%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
   color: white;
   background-color: coral;
-  margin-bottom: 33px;
-  border-radius: 7px;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 body .container .content {
   width: 1140px;
@@ -1684,8 +1681,23 @@ body .container footer .end_footer {
   padding-top: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 540px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 720px) {
+  .container {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
