@@ -16,7 +16,7 @@ body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-br
   width: 15%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand a {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand .img_header {
   width: 100%;
   height: auto;
 }
@@ -62,7 +62,7 @@ body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse 
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .signheader {
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -70,7 +70,7 @@ body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse 
   margin: 2rem 0 0 0;
   color: coral;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .addheader {
   display: flex;
   justify-content: center;
   font-size: 1rem;

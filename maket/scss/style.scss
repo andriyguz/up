@@ -102,7 +102,7 @@ body{
                 .navbar-brand{
                     width: 15%;
                     height: auto;
-                    a{
+                    .img_header{
                         width: 100%;
                         height: auto;
                     }
@@ -128,15 +128,19 @@ body{
                             @include menu;
                         }
                         .nav-item{
-                            @include menu;
-                            color: coral;
+                            .signheader{
+                                @include menu;
+                                color: coral;
+                            }
                         }
                         .nav-item{
-                            @include menu;
-                            color: white;
-                            background-color: coral;
-                            margin-bottom: 2rem;
-                            border-radius: 0.5rem;
+                            .addheader{
+                                @include menu;
+                                color: white;
+                                background-color: coral;
+                                margin-bottom: 2rem;
+                                border-radius: 0.5rem;
+                            }
                         }
                     }
                 }
