@@ -13,16 +13,15 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./scss/icons.css">
     <link rel="stylesheet" href="./scss/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./maket.html">
-                        <svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano" xmlns="http://www.w3.org/2000/svg"
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./maket.html">
+                    <svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 116 32"
                         style="enable-background:new 0 0 116 32;" xml:space="preserve">
                         <style type="text/css">
@@ -51,108 +50,110 @@
                             d="M31.7,19.3L22,9.6c-3.2-3.2-8.3-3.2-11.5,0c0,0,0,0,0,0l0,0c-3.2,3.2-3.2,8.3,0,11.5c0,0,0,0,0,0l10.2,10.2  C26.2,29.6,30.5,25,31.7,19.3L31.7,19.3z" />
                         <path class="st3"
                             d="M26.4,22.2L23.2,19c0.6-1.1,1-2.5,1-3.8c0-4.5-3.6-8.1-8.1-8.1S8,10.7,8,15.2c0,4.5,3.6,8.1,8.1,8.1  c0,0,0,0,0.1,0c1.3,0,2.7-0.4,3.8-1l3.2,3.2c1,1,2.4,1,3.3,0C27.3,24.6,27.3,23.2,26.4,22.2L26.4,22.2z M16.1,21.4  c-3.4,0-6.2-2.8-6.2-6.2S12.7,9,16.1,9s6.2,2.8,6.2,6.2S19.5,21.4,16.1,21.4z" />
-                        </svg>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Demos
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Demos
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-building fs-base opacity-50 me-2"></i>
-                                    Real Estate Demo</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    Real Estate Demo</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-car fs-base opacity-50 me-2"></i>
-                                    Car Finder Demo</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    Car Finder Demo</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-briefcase fs-base opacity-50 me-2"></i>
-                                    Job Board Demo</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    Job Board Demo</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-map-pin fs-base opacity-50 me-2"></i>
-                                    City Guide Demo</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    City Guide Demo</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-home fs-base opacity-50 me-2"></i>
-                                    Main Page</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    Main Page</a>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-list fs-base opacity-50 me-2"></i>
-                                    Components</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">
+                                    Components</a>
+                                <a class="dropdown-item" href="./maket.html">
                                     <i class="fi-file fs-base opacity-50 me-2"></i>
-                                    Documentation</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Home
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">Home v.1</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Home v.2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Catalog
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">Property for Rent</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Property for Sale</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Single Property v.1</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Single Property v.2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Account
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">Personal Info</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Password & Security</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">My Properties</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Wishlist</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Reviews</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Notifications</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Sign In</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Sign Up</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Vendor
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">Add Property</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Property Promotion</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Vendor Page: Properties</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Vendor Page: Reviews</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./maket.html">About</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Blog</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Contacts</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">Help Center</a></li>
-                                  <li><a class="dropdown-item" href="./maket.html">404 Not Found</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"></li>
-                            <li class="nav-item">
+                                    Documentation</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">Home v.1</a>
+                                <a class="dropdown-item" href="./maket.html">Home v.2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Catalog
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">Property for Rent</a>
+                                <a class="dropdown-item" href="./maket.html">Property for Sale</a>
+                                <a class="dropdown-item" href="./maket.html">Single Property v.1</a>
+                                <a class="dropdown-item" href="./maket.html">Single Property v.2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">Personal Info</a>
+                                <a class="dropdown-item" href="./maket.html">Password & Security</a>
+                                <a class="dropdown-item" href="./maket.html">My Properties</a>
+                                <a class="dropdown-item" href="./maket.html">Wishlist</a>
+                                <a class="dropdown-item" href="./maket.html">Reviews</a>
+                                <a class="dropdown-item" href="./maket.html">Notifications</a>
+                                <a class="dropdown-item" href="./maket.html">Sign In</a>
+                                <a class="dropdown-item" href="./maket.html">Sign Up</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Vendor
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">Add Property</a>
+                                <a class="dropdown-item" href="./maket.html">Property Promotion</a>
+                                <a class="dropdown-item" href="./maket.html">Vendor Page: Properties</a>
+                                <a class="dropdown-item" href="./maket.html">Vendor Page: Reviews</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./maket.html">About</a>
+                                <a class="dropdown-item" href="./maket.html">Blog</a>
+                                <a class="dropdown-item" href="./maket.html">Contacts</a>
+                                <a class="dropdown-item" href="./maket.html">Help Center</a>
+                                <a class="dropdown-item" href="./maket.html">404 Not Found</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
                                 <a class="nav-link" href="./maket.html">Sign in</a>
-                            </li>
-                            <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                                 <a class="nav-link" href="./maket.html">+ Add property</a>
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>

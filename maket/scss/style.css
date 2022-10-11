@@ -3,74 +3,66 @@ body .container {
   grid-template-areas: "header" "content" "footer";
 }
 body .container header {
-  width: 1140px;
-  max-width: 1140px;
+  width: 100%;
   grid-area: header;
   position: fixed;
   background: white;
 }
-body .container header .navbar navbar-expand-lg bg-light {
+body .container header .navbar navbar-expand-lg navbar-light bg-light {
   width: 100%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand {
+  width: 15%;
+  height: auto;
+}
+body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand a {
   width: 100%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .navbar-brand {
-  width: 8rem;
-  height: auto;
-}
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .navbar-brand img {
-  width: 100%;
-  height: 100%;
-}
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item dropdown {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
-  width: auto;
-}
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item {
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -78,7 +70,7 @@ body .container header .navbar navbar-expand-lg bg-light .container-fluid .colla
   margin: 2rem 0 0 0;
   color: coral;
 }
-body .container header .navbar navbar-expand-lg bg-light .container-fluid .collapse navbar-collapse .navbar-nav .nav-item {
+body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item {
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -90,8 +82,7 @@ body .container header .navbar navbar-expand-lg bg-light .container-fluid .colla
   border-radius: 0.5rem;
 }
 body .container .content {
-  width: 1140px;
-  max-width: 1140px;
+  width: 100%;
   grid-area: content;
 }
 body .container .content .first .row .col .first_block1 {
@@ -814,7 +805,7 @@ body .container .content .third .row .col .third_block3 .third_block3_button but
   color: white;
 }
 body .container .content .fourth_name {
-  display: block;
+  display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
 body .container .content .fourth_name .fourth_name_h1 {
@@ -1162,7 +1153,7 @@ body .container .content .seventh .seventh_text .seventh_text_button .seventh_te
   border-radius: 0.5rem;
 }
 body .container .content .eighth {
-  display: block;
+  display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
 body .container .content .eighth .eighth_h1 {
@@ -1229,7 +1220,7 @@ body .container .content .ninth .ninth_block4 .ninth_block4_text {
   text-align: center;
 }
 body .container .content .ten {
-  display: block;
+  display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
 body .container .content .ten .ten_h1 {
@@ -1374,7 +1365,7 @@ body .container .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6
   display: none;
 }
 body .container .content .twelve {
-  display: block;
+  display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
 body .container .content .twelve .twelve_h1 {
@@ -1444,8 +1435,7 @@ body .container .content .thirteen .thirteen_block3 .thirteen_block3_text .thirt
   opacity: 0.8;
 }
 body .container footer {
-  width: 1140px;
-  max-width: 1140px;
+  width: 100%;
   grid-area: footer;
 }
 body .container footer .first_footer {
@@ -1681,23 +1671,24 @@ body .container footer .end_footer {
   padding-top: 30px;
 }
 
-@media screen and (min-width: 540px) {
-  .container {
+@media (min-width: 992px) {
+  .navbar-expand-custom {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
     flex-direction: row;
   }
-}
-@media screen and (min-width: 720px) {
-  .container {
-    flex-direction: row;
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
   }
 }
-@media screen and (min-width: 960px) {
-  .container {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1140px) {
-  .container {
+@media screen and (min-width: 992px) {
+  .content {
     flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

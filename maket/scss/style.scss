@@ -92,67 +92,58 @@ body{
         'content'
         'footer';
         header{
-            width: 1140px;
-            max-width: 1140px;
+            width: 100%;
             grid-area: header;
             position: fixed;
             background: white;
-            .navbar navbar-expand-lg bg-light{
+            .navbar navbar-expand-lg navbar-light bg-light{
                 width: 100%;
                 height: auto;
-                .container-fluid{
-                    width: 100%;
+                .navbar-brand{
+                    width: 15%;
                     height: auto;
-                    .navbar-brand{
-                        width: 8rem;
+                    a{
+                        width: 100%;
                         height: auto;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                        }
                     }
-                    .collapse navbar-collapse{
-                        .navbar-nav{
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item dropdown{
-                                @include menu;
-                            }
-                            .nav-item{
-                                width: auto
-                            }
-                            .nav-item{
-                                @include menu;
-                                color: coral;
-                            }
-                            .nav-item{
-                                @include menu;
-                                color: white;
-                                background-color: coral;
-                                margin-bottom: 2rem;
-                                border-radius: 0.5rem;
-                            }
+                }
+                .collapse navbar-collapse{
+                    .navbar-nav mr-auto{
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item dropdown{
+                            @include menu;
+                        }
+                        .nav-item{
+                            @include menu;
+                            color: coral;
+                        }
+                        .nav-item{
+                            @include menu;
+                            color: white;
+                            background-color: coral;
+                            margin-bottom: 2rem;
+                            border-radius: 0.5rem;
                         }
                     }
                 }
             }
         }
         .content{
-            width: 1140px;
-            max-width: 1140px;
+            width: 100%;
             grid-area: content;
             .first{
                 .row{
@@ -637,7 +628,7 @@ body{
                 }   
             }
             .fourth_name{
-                display: block;
+                display: flex;
                 margin: 2.5rem 0 1.5rem 0;
                 .fourth_name_h1{
                     font-size: 2rem;
@@ -986,7 +977,7 @@ body{
                 }
             }
             .eighth{
-                display: block;
+                display: flex;
                 margin: 2.5rem 0 1.5rem 0;
                 .eighth_h1{
                     font-size: 2rem;
@@ -1049,7 +1040,7 @@ body{
                 }
             }
             .ten{
-                display: block;
+                display: flex;
                 margin: 2.5rem 0 1.5rem 0;
                 .ten_h1{
                     font-size: 2rem;
@@ -1220,7 +1211,7 @@ body{
                 }   
             }
             .twelve{
-                display: block;
+                display: flex;
                 margin: 2.5rem 0 1.5rem 0;
                 .twelve_h1{
                     font-size: 2rem;
@@ -1291,8 +1282,7 @@ body{
             }
         }
         footer{
-            width: 1140px;
-            max-width: 1140px;
+            width: 100%;
             grid-area: footer;
             .first_footer{
                 display: flex;
@@ -1528,23 +1518,29 @@ body{
         }
     }
 }
-@media screen and (min-width: 540px) {
-    .container {
-        flex-direction: row;
-    }
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
 }
-@media screen and (min-width: 720px) {
-    .container {
-        flex-direction: row;
-    }
-}
-@media screen and (min-width: 960px) {
-    .container {
-        flex-direction: row;
-    }
-}
-@media screen and (min-width: 1140px) {
-    .container {
+@media screen and (min-width: 992px) {
+    .content {
         flex-direction: row;
     }
 }
