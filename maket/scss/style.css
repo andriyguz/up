@@ -1,68 +1,67 @@
-body .container {
+body .maketsite {
   display: grid;
   grid-template-areas: "header" "content" "footer";
 }
-body .container header {
+body .maketsite header {
   width: 100%;
   grid-area: header;
-  position: fixed;
   background: white;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light {
   width: 100%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand {
   width: 15%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand .img_header {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand .img_header {
   width: 100%;
   height: auto;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .signheader {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .signheader {
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -70,7 +69,7 @@ body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse 
   margin: 2rem 0 0 0;
   color: coral;
 }
-body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .addheader {
+body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .addheader {
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -81,17 +80,17 @@ body .container header .navbar navbar-expand-lg navbar-light bg-light .collapse 
   margin-bottom: 2rem;
   border-radius: 0.5rem;
 }
-body .container .content {
+body .maketsite .content {
   width: 100%;
   grid-area: content;
 }
-body .container .content .first .row .col .first_block1 {
+body .maketsite .content .first .container-fluid .row .col-lg .first_block1 {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100%;
 }
-body .container .content .first .row .col .first_block1 .first_block1_text {
+body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
   width: 100%;
   height: 50%;
   font-size: 3rem;
@@ -99,49 +98,54 @@ body .container .content .first .row .col .first_block1 .first_block1_text {
   display: flex;
   align-items: flex-end;
 }
-body .container .content .first .row .col .first_block1 .first_block1_desc {
+@media screen and (max-width: 992px) {
+  body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
+    font-size: 2rem;
+    margin-top: 0.75rem;
+  }
+}
+body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
   width: 100%;
   height: 50%;
   font-size: 1.25rem;
 }
-body .container .content .first .row .col .first_block2 img {
+@media screen and (max-width: 992px) {
+  body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
+    font-size: 0.85rem;
+  }
+}
+body .maketsite .content .first .container-fluid .row .col-lg {
+  display: flex;
+}
+body .maketsite .content .first .container-fluid .row .col-lg .first_block2 img {
   width: 100%;
 }
-body .container .content .first_block3 {
+@media screen and (max-width: 992px) {
+  body .maketsite .content .first .container-fluid {
+    flex-direction: row;
+  }
+}
+body .maketsite .content .first_block3 {
   width: 100%;
   height: 4rem;
 }
-body .container .content .first_block3 .row {
+body .maketsite .content .first_block3 .container-fluid .row {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 .row {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_one {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col {
-  width: auto;
-  height: 100%;
-}
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_two {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -151,33 +155,11 @@ body .container .content .first_block3 .row .col .first_block3_one1 .row .col .f
   justify-content: center;
   align-items: center;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one1 .row .col .first_block3_three {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 {
-  width: auto;
-  height: 100%;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 .row {
-  width: auto;
-  height: 100%;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col {
-  width: auto;
-  height: 100%;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_four {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -187,25 +169,11 @@ body .container .content .first_block3 .row .col .first_block3_one2 .row .col .f
   justify-content: center;
   align-items: center;
 }
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_five {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col {
-  width: auto;
-  height: 100%;
-}
-body .container .content .first_block3 .row .col .first_block3_one2 .row .col .first_block3_six {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -215,33 +183,77 @@ body .container .content .first_block3 .row .col .first_block3_one2 .row .col .f
   justify-content: center;
   align-items: center;
 }
-body .container .content .first_block3 .row .col {
-  position: relative;
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 {
+  width: auto;
+  height: 100%;
 }
-body .container .content .first_block3 .row .fi-chevron-down {
-  font-size: 0.7rem;
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row {
+  width: auto;
+  height: 100%;
 }
-body .container .content .second {
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_four {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_five {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_six {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .content .second {
   height: 100px;
   width: 100%;
   margin: 2rem 0 2rem 0;
 }
-body .container .content .second .row .col-2 .second_block1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block1 .second_block1_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block1 .second_block1_1 .second_block1_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 .second_block1_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -253,7 +265,7 @@ body .container .content .second .row .col-2 .second_block1 .second_block1_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block1 .second_block1_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -261,17 +273,17 @@ body .container .content .second .row .col-2 .second_block1 .second_block1_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block1:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block1:hover .second_block1_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -285,7 +297,7 @@ body .container .content .second .row .col-2 .second_block1:hover .second_block1
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block1:hover .second_block1_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -293,22 +305,22 @@ body .container .content .second .row .col-2 .second_block1:hover .second_block1
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block2 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block2 .second_block2_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block2 .second_block2_1 .second_block2_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 .second_block2_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -320,7 +332,7 @@ body .container .content .second .row .col-2 .second_block2 .second_block2_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block2 .second_block2_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -328,17 +340,17 @@ body .container .content .second .row .col-2 .second_block2 .second_block2_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block2:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block2:hover .second_block2_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -352,7 +364,7 @@ body .container .content .second .row .col-2 .second_block2:hover .second_block2
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block2:hover .second_block2_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -360,22 +372,22 @@ body .container .content .second .row .col-2 .second_block2:hover .second_block2
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block3 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block3 .second_block3_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block3 .second_block3_1 .second_block3_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 .second_block3_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -387,7 +399,7 @@ body .container .content .second .row .col-2 .second_block3 .second_block3_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block3 .second_block3_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -395,17 +407,17 @@ body .container .content .second .row .col-2 .second_block3 .second_block3_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block3:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block3:hover .second_block3_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -419,7 +431,7 @@ body .container .content .second .row .col-2 .second_block3:hover .second_block3
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block3:hover .second_block3_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -427,22 +439,22 @@ body .container .content .second .row .col-2 .second_block3:hover .second_block3
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block4 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block4 .second_block4_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block4 .second_block4_1 .second_block4_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 .second_block4_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -454,7 +466,7 @@ body .container .content .second .row .col-2 .second_block4 .second_block4_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block4 .second_block4_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -462,17 +474,17 @@ body .container .content .second .row .col-2 .second_block4 .second_block4_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block4:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block4:hover .second_block4_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -486,7 +498,7 @@ body .container .content .second .row .col-2 .second_block4:hover .second_block4
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block4:hover .second_block4_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -494,22 +506,22 @@ body .container .content .second .row .col-2 .second_block4:hover .second_block4
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block5 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block5 .second_block5_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block5 .second_block5_1 .second_block5_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 .second_block5_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -521,7 +533,7 @@ body .container .content .second .row .col-2 .second_block5 .second_block5_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block5 .second_block5_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -529,17 +541,17 @@ body .container .content .second .row .col-2 .second_block5 .second_block5_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block5:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block5:hover .second_block5_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -553,7 +565,7 @@ body .container .content .second .row .col-2 .second_block5:hover .second_block5
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block5:hover .second_block5_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -561,22 +573,22 @@ body .container .content .second .row .col-2 .second_block5:hover .second_block5
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block6 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border: none;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block6 .second_block6_1 {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .container .content .second .row .col-2 .second_block6 .second_block6_1 .second_block6_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 .second_block6_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -588,7 +600,7 @@ body .container .content .second .row .col-2 .second_block6 .second_block6_1 .se
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .container .content .second .row .col-2 .second_block6 .second_block6_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -596,17 +608,17 @@ body .container .content .second .row .col-2 .second_block6 .second_block6_text 
   text-align: center;
   color: black;
 }
-body .container .content .second .row .col-2 .second_block6:hover {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border: 3px solid rgb(231, 228, 228);
+  border: 3px solid rgb(240, 240, 240);
   border-radius: 10px;
   background: white;
   text-decoration: none;
 }
-body .container .content .second .row .col-2 .second_block6:hover .second_block6_content {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -620,7 +632,7 @@ body .container .content .second .row .col-2 .second_block6:hover .second_block6
   color: white;
   background: coral;
 }
-body .container .content .second .row .col-2 .second_block6:hover .second_block6_text {
+body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -628,12 +640,12 @@ body .container .content .second .row .col-2 .second_block6:hover .second_block6
   text-align: center;
   color: black;
 }
-body .container .content .third {
+body .maketsite .content .third {
   width: 100%;
   height: auto;
   padding: 2rem 5% 2rem 5%;
 }
-body .container .content .third .row .col .third_block1 {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -641,11 +653,11 @@ body .container .content .third .row .col .third_block1 {
   color: black;
   text-decoration: none;
 }
-body .container .content .third .row .col .third_block1 .third_block1_image img {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .third .row .col .third_block1 .third_block1_name p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -653,18 +665,18 @@ body .container .content .third .row .col .third_block1 .third_block1_name p {
   text-align: center;
   padding-top: 0.7rem;
 }
-body .container .content .third .row .col .third_block1 .third_block1_desc p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .container .content .third .row .col .third_block1 .third_block1_button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button {
   display: flex;
   justify-content: center;
 }
-body .container .content .third .row .col .third_block1 .third_block1_button button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -676,7 +688,7 @@ body .container .content .third .row .col .third_block1 .third_block1_button but
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .container .content .third .row .col .third_block1 .third_block1_button button:hover {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -690,7 +702,7 @@ body .container .content .third .row .col .third_block1 .third_block1_button but
   background: coral;
   color: white;
 }
-body .container .content .third .row .col .third_block2 {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -698,11 +710,11 @@ body .container .content .third .row .col .third_block2 {
   color: black;
   text-decoration: none;
 }
-body .container .content .third .row .col .third_block2 .third_block2_image img {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .third .row .col .third_block2 .third_block2_name p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -710,18 +722,18 @@ body .container .content .third .row .col .third_block2 .third_block2_name p {
   text-align: center;
   padding-top: 0.7rem;
 }
-body .container .content .third .row .col .third_block2 .third_block2_desc p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .container .content .third .row .col .third_block2 .third_block2_button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button {
   display: flex;
   justify-content: center;
 }
-body .container .content .third .row .col .third_block2 .third_block2_button button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -733,7 +745,7 @@ body .container .content .third .row .col .third_block2 .third_block2_button but
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .container .content .third .row .col .third_block2 .third_block2_button button:hover {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -747,7 +759,7 @@ body .container .content .third .row .col .third_block2 .third_block2_button but
   background: coral;
   color: white;
 }
-body .container .content .third .row .col .third_block3 {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -755,11 +767,11 @@ body .container .content .third .row .col .third_block3 {
   color: black;
   text-decoration: none;
 }
-body .container .content .third .row .col .third_block3 .third_block3_image img {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .third .row .col .third_block3 .third_block3_name p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -767,18 +779,18 @@ body .container .content .third .row .col .third_block3 .third_block3_name p {
   text-align: center;
   padding-top: 0.7rem;
 }
-body .container .content .third .row .col .third_block3 .third_block3_desc p {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .container .content .third .row .col .third_block3 .third_block3_button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button {
   display: flex;
   justify-content: center;
 }
-body .container .content .third .row .col .third_block3 .third_block3_button button {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -790,7 +802,7 @@ body .container .content .third .row .col .third_block3 .third_block3_button but
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .container .content .third .row .col .third_block3 .third_block3_button button:hover {
+body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -804,211 +816,211 @@ body .container .content .third .row .col .third_block3 .third_block3_button but
   background: coral;
   color: white;
 }
-body .container .content .fourth_name {
+body .maketsite .content .fourth_name {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .container .content .fourth_name .fourth_name_h1 {
+body .maketsite .content .fourth_name .fourth_name_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .container .content .fourth {
+body .maketsite .content .fourth {
   width: 100%;
   height: 25rem;
 }
-body .container .content .fourth .row .col .fourth_block1 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_image img {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_text {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_text .fourth_block1_text_for {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_text .fourth_block1_text_name {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_text .fourth_block1_text_desc {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_text .fourth_block1_text_price {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_content {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_content .fourth_block1_content1 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content1 {
   padding-right: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_content .fourth_block1_content2 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .container .content .fourth .row .col .fourth_block1 .fourth_block1_content .fourth_block1_content3 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content3 {
   padding-left: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block2 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_image img {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_text {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_text .fourth_block2_text_for {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_text .fourth_block2_text_name {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_text .fourth_block2_text_desc {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_text .fourth_block2_text_price {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_content {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_content .fourth_block2_content1 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content1 {
   padding-right: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_content .fourth_block2_content2 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .container .content .fourth .row .col .fourth_block2 .fourth_block2_content .fourth_block2_content3 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content3 {
   padding-left: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block3 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_image img {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_text {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_text .fourth_block3_text_for {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_text .fourth_block3_text_name {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_text .fourth_block3_text_desc {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_text .fourth_block3_text_price {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_content {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_content .fourth_block3_content1 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content1 {
   padding-right: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_content .fourth_block3_content2 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .container .content .fourth .row .col .fourth_block3 .fourth_block3_content .fourth_block3_content3 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content3 {
   padding-left: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block4 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_image img {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_image img {
   width: 100%;
   height: auto;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_text {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_text .fourth_block4_text_for {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_text .fourth_block4_text_name {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_text .fourth_block4_text_desc {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_text .fourth_block4_text_price {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_content {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_content .fourth_block4_content1 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content1 {
   padding-right: 0.7rem;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_content .fourth_block4_content2 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .container .content .fourth .row .col .fourth_block4 .fourth_block4_content .fourth_block4_content3 {
+body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content3 {
   padding-left: 0.7rem;
 }
-body .container .content .fifth .row .col-3 .fifth_h1 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-3 .fifth_h1 {
   width: 100%;
   height: 100%;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .container .content .fifth .row .col-1 .fifth_block1 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block1 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1020,7 +1032,7 @@ body .container .content .fifth .row .col-1 .fifth_block1 {
   color: black;
   text-decoration: none;
 }
-body .container .content .fifth .row .col-1 .fifth_block2 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block2 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1032,7 +1044,7 @@ body .container .content .fifth .row .col-1 .fifth_block2 {
   color: black;
   text-decoration: none;
 }
-body .container .content .fifth .row .col-1 .fifth_block3 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block3 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1044,7 +1056,7 @@ body .container .content .fifth .row .col-1 .fifth_block3 {
   color: black;
   text-decoration: none;
 }
-body .container .content .fifth .row .col-1 .fifth_block4 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block4 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1056,11 +1068,11 @@ body .container .content .fifth .row .col-1 .fifth_block4 {
   color: black;
   text-decoration: none;
 }
-body .container .content .fifth .row .col-3 .fifth_block5 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-3 .fifth_block5 {
   width: 100%;
   height: 100%;
 }
-body .container .content .fifth .row .col-2 .fifth_block6 {
+body .maketsite .content .fifth .container-fluid .row .col-lg-2 .fifth_block6 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1072,73 +1084,73 @@ body .container .content .fifth .row .col-2 .fifth_block6 {
   color: black;
   text-decoration: none;
 }
-body .container .content .sixth {
+body .maketsite .content .sixth {
   display: grid;
   gap: 1.5rem;
 }
-body .container .content .sixth .sixth_block1 {
+body .maketsite .content .sixth .sixth_block1 {
   width: 100%;
   height: auto;
   grid-column: 1/3;
   grid-row: 1/3;
 }
-body .container .content .sixth .sixth_block1 img {
+body .maketsite .content .sixth .sixth_block1 img {
   width: 100%;
 }
-body .container .content .sixth .sixth_block2 {
+body .maketsite .content .sixth .sixth_block2 {
   width: 100%;
   height: auto;
   grid-column: 3/5;
   grid-row: 1/2;
 }
-body .container .content .sixth .sixth_block2 img {
+body .maketsite .content .sixth .sixth_block2 img {
   width: 100%;
 }
-body .container .content .sixth .sixth_block3 {
+body .maketsite .content .sixth .sixth_block3 {
   width: 100%;
   height: auto;
   grid-column: 3/5;
   grid-row: 2/3;
 }
-body .container .content .sixth .sixth_block3 img {
+body .maketsite .content .sixth .sixth_block3 img {
   width: 100%;
 }
-body .container .content .seventh {
+body .maketsite .content .seventh {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
 }
-body .container .content .seventh .seventh_image {
+body .maketsite .content .seventh .seventh_image {
   width: 30%;
   height: auto;
 }
-body .container .content .seventh .seventh_image img {
+body .maketsite .content .seventh .seventh_image img {
   width: 100%;
 }
-body .container .content .seventh .seventh_text {
+body .maketsite .content .seventh .seventh_text {
   width: 70%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin-left: 4rem;
 }
-body .container .content .seventh .seventh_text .seventh_text_name {
+body .maketsite .content .seventh .seventh_text .seventh_text_name {
   height: 6rem;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
   padding-top: 3rem;
 }
-body .container .content .seventh .seventh_text .seventh_text_desc {
+body .maketsite .content .seventh .seventh_text .seventh_text_desc {
   height: 6rem;
   font-size: 1.2rem;
   opacity: 0.8;
   text-align: left;
 }
-body .container .content .seventh .seventh_text .seventh_text_button {
+body .maketsite .content .seventh .seventh_text .seventh_text_button {
   height: 6rem;
 }
-body .container .content .seventh .seventh_text .seventh_text_button .seventh_text_button1 {
+body .maketsite .content .seventh .seventh_text .seventh_text_button .seventh_text_button1 {
   width: 9rem;
   height: 2.5rem;
   display: flex;
@@ -1152,339 +1164,339 @@ body .container .content .seventh .seventh_text .seventh_text_button .seventh_te
   background: orangered;
   border-radius: 0.5rem;
 }
-body .container .content .eighth {
+body .maketsite .content .eighth {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .container .content .eighth .eighth_h1 {
+body .maketsite .content .eighth .eighth_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .container .content .ninth {
+body .maketsite .content .ninth {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
   gap: 1rem;
 }
-body .container .content .ninth .ninth_block1 {
+body .maketsite .content .ninth .ninth_block1 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .ninth .ninth_block1 .ninth_block1_image img {
+body .maketsite .content .ninth .ninth_block1 .ninth_block1_image img {
   width: 100%;
 }
-body .container .content .ninth .ninth_block1 .ninth_block1_text {
+body .maketsite .content .ninth .ninth_block1 .ninth_block1_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .container .content .ninth .ninth_block2 {
+body .maketsite .content .ninth .ninth_block2 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .ninth .ninth_block2 .ninth_block2_image img {
+body .maketsite .content .ninth .ninth_block2 .ninth_block2_image img {
   width: 100%;
 }
-body .container .content .ninth .ninth_block2 .ninth_block2_text {
+body .maketsite .content .ninth .ninth_block2 .ninth_block2_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .container .content .ninth .ninth_block3 {
+body .maketsite .content .ninth .ninth_block3 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .ninth .ninth_block3 .ninth_block3_image img {
+body .maketsite .content .ninth .ninth_block3 .ninth_block3_image img {
   width: 100%;
 }
-body .container .content .ninth .ninth_block3 .ninth_block3_text {
+body .maketsite .content .ninth .ninth_block3 .ninth_block3_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .container .content .ninth .ninth_block4 {
+body .maketsite .content .ninth .ninth_block4 {
   display: flex;
   flex-direction: column;
 }
-body .container .content .ninth .ninth_block4 .ninth_block4_image img {
+body .maketsite .content .ninth .ninth_block4 .ninth_block4_image img {
   width: 100%;
 }
-body .container .content .ninth .ninth_block4 .ninth_block4_text {
+body .maketsite .content .ninth .ninth_block4 .ninth_block4_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .container .content .ten {
+body .maketsite .content .ten {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .container .content .ten .ten_h1 {
+body .maketsite .content .ten .ten_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .container .content .eleven {
+body .maketsite .content .eleven {
   width: 100%;
   height: 100px;
 }
-body .container .content .eleven .row .col-2 .eleven_block1 {
+body .maketsite .content .eleven .row .col-2 .eleven_block1 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block1 .eleven_block1_grey img {
+body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_grey img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color img {
+body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_color {
   display: flex;
 }
-body .container .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_grey {
+body .maketsite .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_grey {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block2 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block2 .eleven_block2_grey img {
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color {
-  display: none;
-}
-body .container .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color img {
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_color {
-  display: flex;
-}
-body .container .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_grey {
-  display: none;
-}
-body .container .content .eleven .row .col-2 .eleven_block3 {
+body .maketsite .content .eleven .row .col-2 .eleven_block2 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block3 .eleven_block3_grey img {
+body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_grey img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color img {
+body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_color {
   display: flex;
 }
-body .container .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_grey {
+body .maketsite .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_grey {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block4 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block4 .eleven_block4_grey img {
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color {
-  display: none;
-}
-body .container .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color img {
-  width: 100%;
-  height: 100%;
-}
-body .container .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_color {
-  display: flex;
-}
-body .container .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_grey {
-  display: none;
-}
-body .container .content .eleven .row .col-2 .eleven_block5 {
+body .maketsite .content .eleven .row .col-2 .eleven_block3 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block5 .eleven_block5_grey img {
+body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_grey img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color img {
+body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_color {
   display: flex;
 }
-body .container .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_grey {
+body .maketsite .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_grey {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block6 {
+body .maketsite .content .eleven .row .col-2 .eleven_block4 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block6 .eleven_block6_grey img {
+body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_grey img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color {
   display: none;
 }
-body .container .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color img {
+body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color img {
   width: 100%;
   height: 100%;
 }
-body .container .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_color {
+body .maketsite .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_color {
   display: flex;
 }
-body .container .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_grey {
+body .maketsite .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_grey {
   display: none;
 }
-body .container .content .twelve {
+body .maketsite .content .eleven .row .col-2 .eleven_block5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_grey img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color {
+  display: none;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_color {
+  display: flex;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_grey {
+  display: none;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_grey img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color {
+  display: none;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_color {
+  display: flex;
+}
+body .maketsite .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_grey {
+  display: none;
+}
+body .maketsite .content .twelve {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .container .content .twelve .twelve_h1 {
+body .maketsite .content .twelve .twelve_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .container .content .thirteen {
+body .maketsite .content .thirteen {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
   gap: 1.5rem;
   padding-bottom: 5rem;
 }
-body .container .content .thirteen .thirteen_block1 {
+body .maketsite .content .thirteen .thirteen_block1 {
   width: 32%;
   height: auto;
 }
-body .container .content .thirteen .thirteen_block1 img {
+body .maketsite .content .thirteen .thirteen_block1 img {
   width: 100%;
 }
-body .container .content .thirteen .thirteen_block2 {
+body .maketsite .content .thirteen .thirteen_block2 {
   width: 32%;
   height: auto;
 }
-body .container .content .thirteen .thirteen_block2 img {
+body .maketsite .content .thirteen .thirteen_block2 img {
   width: 100%;
 }
-body .container .content .thirteen .thirteen_block3 {
+body .maketsite .content .thirteen .thirteen_block3 {
   width: 32%;
   display: flex;
   flex-direction: column;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_name {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_name {
   font-size: 1.5rem;
   font-weight: 700;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_desc {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_desc {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.7;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_text {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text {
   display: grid;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl1 {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl1 {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 1.2rem;
   font-weight: 700;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl2 {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl2 {
   grid-column: 2/3;
   grid-row: 1/2;
   color: yellow;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl3 {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl3 {
   grid-column: 1/2;
   grid-row: 2/3;
   font-size: 0.9rem;
   opacity: 0.8;
 }
-body .container .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl4 {
+body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl4 {
   grid-column: 2/3;
   grid-row: 2/3;
   font-size: 0.9rem;
   opacity: 0.8;
 }
-body .container footer {
+body .maketsite footer {
   width: 100%;
   grid-area: footer;
 }
-body .container footer .first_footer {
+body .maketsite footer .first_footer {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
 }
-body .container footer .first_footer .first_left {
+body .maketsite footer .first_footer .first_left {
   display: flex;
   width: 600px;
 }
-body .container footer .first_footer .first_left .first_left_block1 {
+body .maketsite footer .first_footer .first_left .first_left_block1 {
   width: 34%;
   margin: 0.7rem;
 }
-body .container footer .first_footer .first_left .first_left_block1 img {
+body .maketsite footer .first_footer .first_left .first_left_block1 img {
   height: 100px;
   width: 200px;
 }
-body .container footer .first_footer .first_left .first_left_block1 ul {
+body .maketsite footer .first_footer .first_left .first_left_block1 ul {
   list-style-type: none;
   margin-top: 1rem;
 }
-body .container footer .first_footer .first_left .first_left_block1 .messendger {
+body .maketsite footer .first_footer .first_left .first_left_block1 .messendger {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 1rem;
 }
-body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl1 img {
+body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl1 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl2 img {
+body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl2 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl3 img {
+body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl3 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl4 img {
+body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl4 img {
   width: 32px;
   height: 32px;
 }
-body .container footer .first_footer .first_left .first_left_block2 {
+body .maketsite footer .first_footer .first_left .first_left_block2 {
   width: 33%;
 }
-body .container footer .first_footer .first_left .first_left_block2 .first_name1 {
+body .maketsite footer .first_footer .first_left .first_left_block2 .first_name1 {
   height: 54px;
   font-size: 1.2rem;
   font-weight: 700;
@@ -1492,15 +1504,15 @@ body .container footer .first_footer .first_left .first_left_block2 .first_name1
   padding-top: 1.5rem;
   padding-left: 40px;
 }
-body .container footer .first_footer .first_left .first_left_block2 ul {
+body .maketsite footer .first_footer .first_left .first_left_block2 ul {
   list-style-type: none;
   font-size: 16px;
   margin-top: 15px;
 }
-body .container footer .first_footer .first_left .first_left_block3 {
+body .maketsite footer .first_footer .first_left .first_left_block3 {
   width: 33%;
 }
-body .container footer .first_footer .first_left .first_left_block3 .first_name2 {
+body .maketsite footer .first_footer .first_left .first_left_block3 .first_name2 {
   height: 54px;
   font-size: 1.2rem;
   font-weight: 700;
@@ -1508,17 +1520,17 @@ body .container footer .first_footer .first_left .first_left_block3 .first_name2
   padding-top: 1.5rem;
   padding-left: 40px;
 }
-body .container footer .first_footer .first_left .first_left_block3 ul {
+body .maketsite footer .first_footer .first_left .first_left_block3 ul {
   list-style-type: none;
   font-size: 16px;
   margin-top: 15px;
 }
-body .container footer .first_footer .first_right {
+body .maketsite footer .first_footer .first_right {
   display: flex;
   width: 540px;
   flex-direction: column;
 }
-body .container footer .first_footer .first_right .first_name3 {
+body .maketsite footer .first_footer .first_right .first_name3 {
   height: 54px;
   font-size: 1.2rem;
   font-weight: 700;
@@ -1526,146 +1538,146 @@ body .container footer .first_footer .first_right .first_name3 {
   padding-top: 1.5rem;
   margin-bottom: 15px;
 }
-body .container footer .first_footer .first_right .first_right_block1 {
+body .maketsite footer .first_footer .first_right .first_right_block1 {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_image {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_image {
   width: 250px;
   height: 250px;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_image img {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_image img {
   width: 100%;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text {
   display: flex;
   flex-direction: column;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_top {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_top {
   font-size: 14px;
   color: coral;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_name {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_name {
   font-size: 16px;
   font-weight: 700;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_desc {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_desc {
   font-size: 14px;
   opacity: 0.7;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom {
   display: flex;
   flex-flow: row;
   gap: 15px;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom1 {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom1 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom2 {
+body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom2 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .first_footer .first_right .first_right_block2 {
+body .maketsite footer .first_footer .first_right .first_right_block2 {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_image {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_image {
   width: 250px;
   height: 250px;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_image img {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_image img {
   width: 100%;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text {
   display: flex;
   flex-direction: column;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_top {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_top {
   font-size: 14px;
   color: coral;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_name {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_name {
   font-size: 16px;
   font-weight: 700;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_desc {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_desc {
   font-size: 14px;
   opacity: 0.7;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom {
   display: flex;
   flex-flow: row;
   gap: 15px;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom1 {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom1 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom2 {
+body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom2 {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 10px;
 }
-body .container footer .dark_footer {
+body .maketsite footer .dark_footer {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
   gap: 30px;
   background-color: rgb(24, 1, 41);
 }
-body .container footer .dark_footer .dark_footer_block1 {
+body .maketsite footer .dark_footer .dark_footer_block1 {
   width: 25%;
 }
-body .container footer .dark_footer .dark_footer_block1 img {
+body .maketsite footer .dark_footer .dark_footer_block1 img {
   width: 100%;
 }
-body .container footer .dark_footer .dark_footer_block2 {
+body .maketsite footer .dark_footer .dark_footer_block2 {
   width: 40%;
 }
-body .container footer .dark_footer .dark_footer_block2 .dark_footer_block2_h1 {
+body .maketsite footer .dark_footer .dark_footer_block2 .dark_footer_block2_h1 {
   height: 50%;
   font-size: 28px;
   font-weight: 700;
   color: white;
   padding-top: 75px;
 }
-body .container footer .dark_footer .dark_footer_block2 .dark_footer_block2_h2 {
+body .maketsite footer .dark_footer .dark_footer_block2 .dark_footer_block2_h2 {
   height: 50%;
   font-size: 16px;
   color: white;
 }
-body .container footer .dark_footer .dark_footer_block3 {
+body .maketsite footer .dark_footer .dark_footer_block3 {
   width: 35%;
   display: flex;
   flex-direction: row;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 {
   width: 50%;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 {
   width: 100%;
   padding-top: 120px;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 img {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 img {
   width: 100%;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 {
   width: 50%;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 {
   width: 100%;
   padding-top: 120px;
 }
-body .container footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 img {
+body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 img {
   width: 100%;
 }
-body .container footer .end_footer {
+body .maketsite footer .end_footer {
   font-size: 15px;
   text-align: center;
   padding-top: 30px;
@@ -1685,10 +1697,5 @@ body .container footer .end_footer {
   .navbar-expand-custom .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-  }
-}
-@media screen and (min-width: 992px) {
-  .content {
-    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
