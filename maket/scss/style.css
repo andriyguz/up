@@ -7,90 +7,42 @@ body .maketsite header {
   grid-area: header;
   background: white;
 }
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light {
+body .maketsite header .container-fluid .row .col-lg-2 {
   width: 100%;
   height: auto;
 }
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand {
-  width: 15%;
-  height: auto;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .navbar-brand .img_header {
-  width: 100%;
-  height: auto;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
+body .maketsite header .container-fluid .row .col-lg-8 .row .col-lg-10 .row .col-lg-2 .dropdown {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
+  align-items: center;
 }
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item dropdown {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .signheader {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 2rem 0 0 0;
-  color: coral;
-}
-body .maketsite header .navbar navbar-expand-lg navbar-light bg-light .collapse navbar-collapse .navbar-nav mr-auto .nav-item .addheader {
+body .maketsite header .container-fluid .row .col-lg-2 .addheader {
   display: flex;
   justify-content: center;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem 0 0 0;
   color: white;
-  background-color: blue;
+  background-color: coral;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
 }
-body .maketsite .content {
+body .maketsite .allcontent {
   width: 100%;
   grid-area: content;
 }
-body .maketsite .content .first .container-fluid .row .col-lg .first_block1 {
+body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block1 {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
+body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
   width: 100%;
   height: 50%;
   font-size: 3rem;
@@ -99,67 +51,53 @@ body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .fir
   align-items: flex-end;
 }
 @media screen and (max-width: 992px) {
-  body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
+  body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block1 .first_block1_text {
     font-size: 2rem;
     margin-top: 0.75rem;
   }
 }
-body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
+body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
   width: 100%;
   height: 50%;
   font-size: 1.25rem;
 }
 @media screen and (max-width: 992px) {
-  body .maketsite .content .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
+  body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block1 .first_block1_desc {
     font-size: 0.85rem;
   }
 }
-body .maketsite .content .first .container-fluid .row .col-lg {
+body .maketsite .allcontent .first .container-fluid .row .col-lg {
   display: flex;
 }
-body .maketsite .content .first .container-fluid .row .col-lg .first_block2 img {
+body .maketsite .allcontent .first .container-fluid .row .col-lg .first_block2 img {
   width: 100%;
 }
 @media screen and (max-width: 992px) {
-  body .maketsite .content .first .container-fluid {
+  body .maketsite .allcontent .first .container-fluid {
     flex-direction: row;
   }
 }
-body .maketsite .content .first_block3 {
+body .maketsite .allcontent .first_block3 {
   width: 100%;
   height: 4rem;
 }
-body .maketsite .content .first_block3 .container-fluid .row {
+body .maketsite .allcontent .first_block3 .container-fluid .row {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
-  width: auto;
-  height: 100%;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -169,33 +107,11 @@ body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_bloc
   justify-content: center;
   align-items: center;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 {
-  width: auto;
-  height: 100%;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row {
-  width: auto;
-  height: 100%;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
-  width: auto;
-  height: 100%;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_four {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -205,25 +121,11 @@ body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_bloc
   justify-content: center;
   align-items: center;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm {
   width: auto;
   height: 100%;
 }
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_five {
-  width: auto;
-  height: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
-  width: auto;
-  height: 100%;
-}
-body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_six {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one1 .row .col-sm .dropdown {
   width: auto;
   height: 100%;
   font-size: 1.1rem;
@@ -233,12 +135,62 @@ body .maketsite .content .first_block3 .container-fluid .row .col-lg .first_bloc
   justify-content: center;
   align-items: center;
 }
-body .maketsite .content .second {
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_four {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_five {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm {
+  width: auto;
+  height: 100%;
+}
+body .maketsite .allcontent .first_block3 .container-fluid .row .col-lg .first_block3_one2 .row .col-sm .first_block3_six {
+  width: auto;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .maketsite .allcontent .second {
   height: 100px;
   width: 100%;
   margin: 2rem 0 2rem 0;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -247,13 +199,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 .second_block1_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_1 .second_block1_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -265,7 +217,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1 .second_block1_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -273,7 +225,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -283,7 +235,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -297,7 +249,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block1:hover .second_block1_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -305,7 +257,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block1:
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -314,13 +266,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 .second_block2_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_1 .second_block2_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -332,7 +284,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2 .second_block2_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -340,7 +292,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -350,7 +302,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -364,7 +316,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block2:hover .second_block2_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -372,7 +324,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block2:
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -381,13 +333,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 .second_block3_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_1 .second_block3_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -399,7 +351,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3 .second_block3_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -407,7 +359,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -417,7 +369,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -431,7 +383,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block3:hover .second_block3_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -439,7 +391,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block3:
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -448,13 +400,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 .second_block4_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_1 .second_block4_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -466,7 +418,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4 .second_block4_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -474,7 +426,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -484,7 +436,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -498,7 +450,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block4:hover .second_block4_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -506,7 +458,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block4:
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -515,13 +467,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 .second_block5_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_1 .second_block5_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -533,7 +485,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5 .second_block5_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -541,7 +493,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -551,7 +503,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -565,7 +517,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block5:hover .second_block5_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -573,7 +525,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block5:
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -582,13 +534,13 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 .second_block6_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_1 .second_block6_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -600,7 +552,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 
   margin: 0.35rem 0 0.35rem 0;
   border-radius: 2rem;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6 .second_block6_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -608,7 +560,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6 
   text-align: center;
   color: black;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -618,7 +570,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:
   background: white;
   text-decoration: none;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_content {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_content {
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -632,7 +584,7 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:
   color: white;
   background: coral;
 }
-body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_text {
+body .maketsite .allcontent .second .container-fluid .row .col-lg-2 .second_block6:hover .second_block6_text {
   width: 100%;
   height: auto;
   font-size: 1rem;
@@ -640,12 +592,12 @@ body .maketsite .content .second .container-fluid .row .col-lg-2 .second_block6:
   text-align: center;
   color: black;
 }
-body .maketsite .content .third {
+body .maketsite .allcontent .third {
   width: 100%;
   height: auto;
   padding: 2rem 5% 2rem 5%;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -653,11 +605,11 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block1 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_image img {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_name p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -665,18 +617,18 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .thi
   text-align: center;
   padding-top: 0.7rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_desc p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_button {
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -688,7 +640,7 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .thi
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .third_block1_button button:hover {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block1 .third_block1_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -702,7 +654,7 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block1 .thi
   background: coral;
   color: white;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -710,11 +662,11 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block2 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_image img {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_name p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -722,18 +674,18 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .thi
   text-align: center;
   padding-top: 0.7rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_desc p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_button {
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -745,7 +697,7 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .thi
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .third_block2_button button:hover {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block2 .third_block2_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -759,7 +711,7 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block2 .thi
   background: coral;
   color: white;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -767,11 +719,11 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block3 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_image img {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_name p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_name p {
   height: 3rem;
   width: auto;
   font-size: 2rem;
@@ -779,18 +731,18 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .thi
   text-align: center;
   padding-top: 0.7rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_desc p {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_desc p {
   height: 5rem;
   width: auto;
   font-size: 1rem;
   opacity: 0.7;
   text-align: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_button {
   display: flex;
   justify-content: center;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button button {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_button button {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -802,7 +754,7 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .thi
   border: 1px solid coral;
   border-radius: 0.35rem;
 }
-body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .third_block3_button button:hover {
+body .maketsite .allcontent .third .container-fluid .row .col-lg .third_block3 .third_block3_button button:hover {
   height: 3rem;
   display: flex;
   font-size: 1.1rem;
@@ -816,211 +768,211 @@ body .maketsite .content .third .container-fluid .row .col-lg .third_block3 .thi
   background: coral;
   color: white;
 }
-body .maketsite .content .fourth_name {
+body .maketsite .allcontent .fourth_name {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .maketsite .content .fourth_name .fourth_name_h1 {
+body .maketsite .allcontent .fourth_name .fourth_name_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .maketsite .content .fourth {
+body .maketsite .allcontent .fourth {
   width: 100%;
   height: 25rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 {
   display: flex;
   flex-direction: column;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_image img {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_for {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_name {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_desc {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_price {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_text .fourth_block1_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content1 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content1 {
   padding-right: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content2 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content3 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block1 .fourth_block1_content .fourth_block1_content3 {
   padding-left: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 {
   display: flex;
   flex-direction: column;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_image img {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_for {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_name {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_desc {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_price {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_text .fourth_block2_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content1 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content1 {
   padding-right: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content2 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content3 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block2 .fourth_block2_content .fourth_block2_content3 {
   padding-left: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 {
   display: flex;
   flex-direction: column;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_image img {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_for {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_name {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_desc {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_price {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_text .fourth_block3_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content1 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content1 {
   padding-right: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content2 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content3 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block3 .fourth_block3_content .fourth_block3_content3 {
   padding-left: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 {
   display: flex;
   flex-direction: column;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_image img {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_image img {
   width: 100%;
   height: auto;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_for {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_for {
   font-size: 0.9rem;
   color: coral;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_name {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_name {
   font-size: 1rem;
   font-weight: 600;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_desc {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_desc {
   font-size: 0.9rem;
   opacity: 0.5;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_price {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_text .fourth_block4_text_price {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content1 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content1 {
   padding-right: 0.7rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content2 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content2 {
   padding: 0 0.35rem 0 0.35rem;
 }
-body .maketsite .content .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content3 {
+body .maketsite .allcontent .fourth .container-fluid .row .col-lg .fourth_block4 .fourth_block4_content .fourth_block4_content3 {
   padding-left: 0.7rem;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-3 .fifth_h1 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-3 .fifth_h1 {
   width: 100%;
   height: 100%;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block1 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-1 .fifth_block1 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1032,7 +984,7 @@ body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block1 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block2 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-1 .fifth_block2 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1044,7 +996,7 @@ body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block2 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block3 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-1 .fifth_block3 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1056,7 +1008,7 @@ body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block3 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block4 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-1 .fifth_block4 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1068,11 +1020,11 @@ body .maketsite .content .fifth .container-fluid .row .col-lg-1 .fifth_block4 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-3 .fifth_block5 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-3 .fifth_block5 {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .fifth .container-fluid .row .col-lg-2 .fifth_block6 {
+body .maketsite .allcontent .fifth .container-fluid .row .col-lg-2 .fifth_block6 {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -1084,73 +1036,55 @@ body .maketsite .content .fifth .container-fluid .row .col-lg-2 .fifth_block6 {
   color: black;
   text-decoration: none;
 }
-body .maketsite .content .sixth {
-  display: grid;
-  gap: 1.5rem;
-}
-body .maketsite .content .sixth .sixth_block1 {
+body .maketsite .allcontent .sixth .container-fluid .row .col-lg-6 .sixth_block1 img {
   width: 100%;
   height: auto;
-  grid-column: 1/3;
-  grid-row: 1/3;
 }
-body .maketsite .content .sixth .sixth_block1 img {
+@media screen and (max-width: 992px) {
+  body .maketsite .allcontent .sixth .container-fluid .row .col-lg-6 .sixth_block1 img {
+    margin-bottom: 1.65rem;
+  }
+}
+body .maketsite .allcontent .sixth .container-fluid .row .col-lg-6 .sixth_block2 img {
   width: 100%;
+  height: 50%;
 }
-body .maketsite .content .sixth .sixth_block2 {
+body .maketsite .allcontent .sixth .container-fluid .row .col-lg-6 .sixth_block3 img {
+  width: 100%;
+  height: 50%;
+  margin-top: 1.65rem;
+}
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-4 .seventh_image {
   width: 100%;
   height: auto;
-  grid-column: 3/5;
-  grid-row: 1/2;
 }
-body .maketsite .content .sixth .sixth_block2 img {
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text {
   width: 100%;
-}
-body .maketsite .content .sixth .sixth_block3 {
-  width: 100%;
-  height: auto;
-  grid-column: 3/5;
-  grid-row: 2/3;
-}
-body .maketsite .content .sixth .sixth_block3 img {
-  width: 100%;
-}
-body .maketsite .content .seventh {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-}
-body .maketsite .content .seventh .seventh_image {
-  width: 30%;
-  height: auto;
-}
-body .maketsite .content .seventh .seventh_image img {
-  width: 100%;
-}
-body .maketsite .content .seventh .seventh_text {
-  width: 70%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin-left: 4rem;
 }
-body .maketsite .content .seventh .seventh_text .seventh_text_name {
-  height: 6rem;
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text .seventh_text_name {
+  width: 100%;
+  height: 25%;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
   padding-top: 3rem;
 }
-body .maketsite .content .seventh .seventh_text .seventh_text_desc {
-  height: 6rem;
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text .seventh_text_desc {
+  width: 100%;
+  height: 25%;
   font-size: 1.2rem;
   opacity: 0.8;
   text-align: left;
 }
-body .maketsite .content .seventh .seventh_text .seventh_text_button {
-  height: 6rem;
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text .seventh_text_button {
+  width: 100%;
+  height: 50%;
 }
-body .maketsite .content .seventh .seventh_text .seventh_text_button .seventh_text_button1 {
+body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text .seventh_text_button .seventh_text_button1 {
   width: 9rem;
   height: 2.5rem;
   display: flex;
@@ -1164,283 +1098,321 @@ body .maketsite .content .seventh .seventh_text .seventh_text_button .seventh_te
   background: orangered;
   border-radius: 0.5rem;
 }
-body .maketsite .content .eighth {
+@media screen and (max-width: 992px) {
+  body .maketsite .allcontent .seventh .container-fluid .row .col-lg-8 .seventh_text {
+    margin-left: 0;
+  }
+}
+body .maketsite .allcontent .eighth {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .maketsite .content .eighth .eighth_h1 {
+body .maketsite .allcontent .eighth .eighth_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .maketsite .content .ninth {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  gap: 1rem;
+body .maketsite .allcontent .ninth .container-fluid .content {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 75rem;
 }
-body .maketsite .content .ninth .ninth_block1 {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block1 {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 0.5rem;
 }
-body .maketsite .content .ninth .ninth_block1 .ninth_block1_image img {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block1 .ninth_block1_image img {
   width: 100%;
+  height: auto;
 }
-body .maketsite .content .ninth .ninth_block1 .ninth_block1_text {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block1 .ninth_block1_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .maketsite .content .ninth .ninth_block2 {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block2 {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 0.5rem;
 }
-body .maketsite .content .ninth .ninth_block2 .ninth_block2_image img {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block2 .ninth_block2_image img {
   width: 100%;
+  height: auto;
 }
-body .maketsite .content .ninth .ninth_block2 .ninth_block2_text {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block2 .ninth_block2_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .maketsite .content .ninth .ninth_block3 {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block3 {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 0.5rem;
 }
-body .maketsite .content .ninth .ninth_block3 .ninth_block3_image img {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block3 .ninth_block3_image img {
   width: 100%;
+  height: auto;
 }
-body .maketsite .content .ninth .ninth_block3 .ninth_block3_text {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block3 .ninth_block3_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .maketsite .content .ninth .ninth_block4 {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block4 {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 0.5rem;
 }
-body .maketsite .content .ninth .ninth_block4 .ninth_block4_image img {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block4 .ninth_block4_image img {
   width: 100%;
+  height: auto;
 }
-body .maketsite .content .ninth .ninth_block4 .ninth_block4_text {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block4 .ninth_block4_text {
   font-size: 1rem;
   font-weight: 700;
   opacity: 0.8;
   text-align: center;
 }
-body .maketsite .content .ten {
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block5 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 0.5rem;
+}
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block5 .ninth_block5_image img {
+  width: 100%;
+  height: auto;
+}
+body .maketsite .allcontent .ninth .container-fluid .content .slider multiple-items .ninth_bl .ninth_block5 .ninth_block5_text {
+  font-size: 1rem;
+  font-weight: 700;
+  opacity: 0.8;
+  text-align: center;
+}
+body .maketsite .allcontent .ten {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .maketsite .content .ten .ten_h1 {
+body .maketsite .allcontent .ten .ten_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .maketsite .content .eleven {
+body .maketsite .allcontent .eleven {
   width: 100%;
   height: 100px;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1 {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_grey img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1 .eleven_block1_grey img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1 .eleven_block1_color {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1 .eleven_block1_color img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1 .eleven_block1_color img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1:hover .eleven_block1_color {
   display: flex;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block1:hover .eleven_block1_grey {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block1:hover .eleven_block1_grey {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block2 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_grey img {
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color {
-  display: none;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block2 .eleven_block2_color img {
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_color {
-  display: flex;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block2:hover .eleven_block2_grey {
-  display: none;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block3 {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_grey img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2 .eleven_block2_grey img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2 .eleven_block2_color {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block3 .eleven_block3_color img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2 .eleven_block2_color img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2:hover .eleven_block2_color {
   display: flex;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block3:hover .eleven_block3_grey {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block2:hover .eleven_block2_grey {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block4 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_grey img {
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color {
-  display: none;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block4 .eleven_block4_color img {
-  width: 100%;
-  height: 100%;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_color {
-  display: flex;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block4:hover .eleven_block4_grey {
-  display: none;
-}
-body .maketsite .content .eleven .row .col-2 .eleven_block5 {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_grey img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3 .eleven_block3_grey img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3 .eleven_block3_color {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block5 .eleven_block5_color img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3 .eleven_block3_color img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3:hover .eleven_block3_color {
   display: flex;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block5:hover .eleven_block5_grey {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block3:hover .eleven_block3_grey {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6 {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4 {
   display: flex;
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_grey img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4 .eleven_block4_grey img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4 .eleven_block4_color {
   display: none;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6 .eleven_block6_color img {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4 .eleven_block4_color img {
   width: 100%;
   height: 100%;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_color {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4:hover .eleven_block4_color {
   display: flex;
 }
-body .maketsite .content .eleven .row .col-2 .eleven_block6:hover .eleven_block6_grey {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block4:hover .eleven_block4_grey {
   display: none;
 }
-body .maketsite .content .twelve {
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5 .eleven_block5_grey img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5 .eleven_block5_color {
+  display: none;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5 .eleven_block5_color img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5:hover .eleven_block5_color {
+  display: flex;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block5:hover .eleven_block5_grey {
+  display: none;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6 .eleven_block6_grey img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6 .eleven_block6_color {
+  display: none;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6 .eleven_block6_color img {
+  width: 100%;
+  height: 100%;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6:hover .eleven_block6_color {
+  display: flex;
+}
+body .maketsite .allcontent .eleven .row .col-2 .eleven_block6:hover .eleven_block6_grey {
+  display: none;
+}
+body .maketsite .allcontent .twelve {
   display: flex;
   margin: 2.5rem 0 1.5rem 0;
 }
-body .maketsite .content .twelve .twelve_h1 {
+body .maketsite .allcontent .twelve .twelve_h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
-body .maketsite .content .thirteen {
+body .maketsite .allcontent .thirteen {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
   gap: 1.5rem;
   padding-bottom: 5rem;
 }
-body .maketsite .content .thirteen .thirteen_block1 {
+body .maketsite .allcontent .thirteen .thirteen_block1 {
   width: 32%;
   height: auto;
 }
-body .maketsite .content .thirteen .thirteen_block1 img {
+body .maketsite .allcontent .thirteen .thirteen_block1 img {
   width: 100%;
 }
-body .maketsite .content .thirteen .thirteen_block2 {
+body .maketsite .allcontent .thirteen .thirteen_block2 {
   width: 32%;
   height: auto;
 }
-body .maketsite .content .thirteen .thirteen_block2 img {
+body .maketsite .allcontent .thirteen .thirteen_block2 img {
   width: 100%;
 }
-body .maketsite .content .thirteen .thirteen_block3 {
+body .maketsite .allcontent .thirteen .thirteen_block3 {
   width: 32%;
   display: flex;
   flex-direction: column;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_name {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_name {
   font-size: 1.5rem;
   font-weight: 700;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_desc {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_desc {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.7;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_text {
   display: grid;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl1 {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl1 {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 1.2rem;
   font-weight: 700;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl2 {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl2 {
   grid-column: 2/3;
   grid-row: 1/2;
   color: yellow;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl3 {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl3 {
   grid-column: 1/2;
   grid-row: 2/3;
   font-size: 0.9rem;
   opacity: 0.8;
 }
-body .maketsite .content .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl4 {
+body .maketsite .allcontent .thirteen .thirteen_block3 .thirteen_block3_text .thirteen_block3_text_bl4 {
   grid-column: 2/3;
   grid-row: 2/3;
   font-size: 0.9rem;
@@ -1450,252 +1422,287 @@ body .maketsite footer {
   width: 100%;
   grid-area: footer;
 }
-body .maketsite footer .first_footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-}
-body .maketsite footer .first_footer .first_left {
-  display: flex;
-  width: 600px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block1 {
-  width: 34%;
-  margin: 0.7rem;
-}
-body .maketsite footer .first_footer .first_left .first_left_block1 img {
-  height: 100px;
-  width: 200px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block1 ul {
-  list-style-type: none;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 {
+  width: 100%;
+  height: auto;
   margin-top: 1rem;
 }
-body .maketsite footer .first_footer .first_left .first_left_block1 .messendger {
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 img {
+  height: auto;
+  width: 100%;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 ul li a {
+  color: black;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-decoration: none;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 ul li a:hover {
+  color: coral;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 .messendger {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 .messendger .messendger_bl1 img {
+  width: 2rem;
+  height: 2rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 .messendger .messendger_bl2 img {
+  width: 2rem;
+  height: 2rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 .messendger .messendger_bl3 img {
+  width: 2rem;
+  height: 2rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block1 .messendger .messendger_bl4 img {
+  width: 2rem;
+  height: 2rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block2 {
+  width: 100%;
+  height: auto;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block2 .first_name1 {
+  height: 3.5rem;
+  width: auto;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 1.5rem;
+  padding-left: 2.5rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block2 ul {
+  list-style-type: none;
+  font-size: 1rem;
   margin-top: 1rem;
 }
-body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl1 img {
-  width: 32px;
-  height: 32px;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block2 ul li a {
+  color: black;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-decoration: none;
 }
-body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl2 img {
-  width: 32px;
-  height: 32px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl3 img {
-  width: 32px;
-  height: 32px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block1 .messendger .messendger_bl4 img {
-  width: 32px;
-  height: 32px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block2 {
-  width: 33%;
-}
-body .maketsite footer .first_footer .first_left .first_left_block2 .first_name1 {
-  height: 54px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: left;
-  padding-top: 1.5rem;
-  padding-left: 40px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block2 ul {
-  list-style-type: none;
-  font-size: 16px;
-  margin-top: 15px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block3 {
-  width: 33%;
-}
-body .maketsite footer .first_footer .first_left .first_left_block3 .first_name2 {
-  height: 54px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: left;
-  padding-top: 1.5rem;
-  padding-left: 40px;
-}
-body .maketsite footer .first_footer .first_left .first_left_block3 ul {
-  list-style-type: none;
-  font-size: 16px;
-  margin-top: 15px;
-}
-body .maketsite footer .first_footer .first_right {
-  display: flex;
-  width: 540px;
-  flex-direction: column;
-}
-body .maketsite footer .first_footer .first_right .first_name3 {
-  height: 54px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: left;
-  padding-top: 1.5rem;
-  margin-bottom: 15px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_image {
-  width: 250px;
-  height: 250px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_image img {
-  width: 100%;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text {
-  display: flex;
-  flex-direction: column;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_top {
-  font-size: 14px;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block2 ul li a:hover {
   color: coral;
 }
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_name {
-  font-size: 16px;
-  font-weight: 700;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_desc {
-  font-size: 14px;
-  opacity: 0.7;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom {
-  display: flex;
-  flex-flow: row;
-  gap: 15px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom1 {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block1 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom2 {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_image {
-  width: 250px;
-  height: 250px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_image img {
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block3 {
   width: 100%;
+  height: auto;
 }
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text {
-  display: flex;
-  flex-direction: column;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block3 .first_name2 {
+  height: 3.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 1.5rem;
+  padding-left: 2.5rem;
 }
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_top {
-  font-size: 14px;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block3 ul {
+  list-style-type: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block3 ul li a {
+  color: black;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-decoration: none;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-4 .first_left_block3 ul li a:hover {
   color: coral;
 }
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_name {
-  font-size: 16px;
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .first_name3 {
+  height: 3.5rem;
+  width: 100%;
+  font-size: 1.3rem;
   font-weight: 700;
+  text-align: left;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
 }
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_desc {
-  font-size: 14px;
-  opacity: 0.7;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom {
-  display: flex;
-  flex-flow: row;
-  gap: 15px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom1 {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-body .maketsite footer .first_footer .first_right .first_right_block2 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom2 {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-body .maketsite footer .dark_footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  gap: 30px;
-  background-color: rgb(24, 1, 41);
-}
-body .maketsite footer .dark_footer .dark_footer_block1 {
-  width: 25%;
-}
-body .maketsite footer .dark_footer .dark_footer_block1 img {
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block1_image {
   width: 100%;
+  height: auto;
 }
-body .maketsite footer .dark_footer .dark_footer_block2 {
-  width: 40%;
-}
-body .maketsite footer .dark_footer .dark_footer_block2 .dark_footer_block2_h1 {
-  height: 50%;
-  font-size: 28px;
-  font-weight: 700;
-  color: white;
-  padding-top: 75px;
-}
-body .maketsite footer .dark_footer .dark_footer_block2 .dark_footer_block2_h2 {
-  height: 50%;
-  font-size: 16px;
-  color: white;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 {
-  width: 35%;
-  display: flex;
-  flex-direction: row;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 {
-  width: 50%;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 {
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block1_image img {
   width: 100%;
-  padding-top: 120px;
+  height: auto;
 }
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl1 .dark_footer_block3_bl11 img {
-  width: 100%;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 {
-  width: 50%;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 {
-  width: 100%;
-  padding-top: 120px;
-}
-body .maketsite footer .dark_footer .dark_footer_block3 .dark_footer_block3_bl2 .dark_footer_block3_bl22 img {
-  width: 100%;
-}
-body .maketsite footer .end_footer {
-  font-size: 15px;
-  text-align: center;
-  padding-top: 30px;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-custom {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-  }
-  .navbar-expand-custom .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-expand-custom .navbar-toggler {
+@media screen and (max-width: 992px) {
+  body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block1_image {
     display: none;
   }
-  .navbar-expand-custom .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text {
+  display: flex;
+  flex-direction: column;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_top {
+  font-size: 0.9rem;
+  color: coral;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_desc {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_bottom {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom1 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.65rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block1_text .first_right_block1_text_bottom .first_right_block1_text_bottom2 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.65rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row {
+  margin-top: 1rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block2_image {
+  width: 100%;
+  height: auto;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block2_image img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-3 .first_right_block2_image {
+    display: none;
   }
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text {
+  display: flex;
+  flex-direction: column;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_top {
+  font-size: 0.9rem;
+  color: coral;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_desc {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_bottom {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom1 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.65rem;
+}
+body .maketsite footer .container-fluid .ft_tp .row .col-lg-6 .row .col-lg-9 .first_right_block2_text .first_right_block2_text_bottom .first_right_block2_text_bottom2 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.65rem;
+}
+body .maketsite footer .container-fluid .ft_bt {
+  margin-top: 4rem;
+  background: rgb(24, 1, 41);
+  color: white;
+  width: 100%;
+  height: 12rem;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 {
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt {
+  height: 100%;
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg {
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_block1 {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_block1 .ft_bt1 {
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_block1 .ft_bt2 {
+  width: 100%;
+  height: 50%;
+  font-size: 1.25rem;
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg {
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg .ft_bt_bl11 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: rgb(55, 3, 85);
+  border-radius: 0.75rem;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg .ft_bt_bl11 img {
+  width: 100%;
+  height: auto;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg .ft_bt_bl22 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: rgb(55, 3, 85);
+  border-radius: 0.75rem;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-9.order-2 .ft_bt_rt .row .col-lg .ft_bt_rtt .row .col-lg .ft_bt_bl22 img {
+  width: 100%;
+  height: auto;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-3.order-1 {
+  display: flex;
+}
+body .maketsite footer .container-fluid .ft_bt .row .col-lg-3.order-1 img {
+  width: 100%;
+  height: 100%;
+  margin-top: -3rem;
+}
+body .maketsite footer .container-fluid .end_footer {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2rem;
 }/*# sourceMappingURL=style.css.map */

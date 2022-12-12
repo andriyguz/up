@@ -40,6 +40,26 @@ echo '<pre>';
 print_r($arr3);
 echo '</pre>';
 
+$arr5 = array('q', 'w', 'e', 'r', 't', 'y', 'u');
+echo '<pre>';
+print_r($arr5);
+echo '</pre>';
+
+$arr4 = ['C' => 200, 'B' => 100, 'A' => 300];
+echo '<pre>';
+print_r($arr4);
+echo '</pre>';
+
+$arr6 = array('q', 'w', 'e', 'r', 't', 'y', 'u', 'w', 'e', 'u');
+echo '<pre>';
+print_r($arr6);
+echo '</pre>';
+
+$arr7 = array(21, 23, 26);
+echo '<pre>';
+print_r($arr7);
+echo '</pre>';
+
 echo '<hr>';
 echo '<br>';
 
@@ -241,6 +261,13 @@ echo '<br>';
 //extract
 echo 'extract';
 echo '<br>';
+/*
+$A = 400;
+extract($arr4, EXTR_OVERWRITE, $A);
+echo '<pre>';
+print_r($arr4);
+echo '</pre>';
+*/
 
 echo '<hr>';
 echo '<br>';
@@ -249,9 +276,10 @@ echo '<br>';
 echo 'arsort';
 echo '<br>';
 
-echo '<pre>';
-print_r(arsort($arr1));
-echo '</pre>';
+arsort($arr4);
+foreach ($arr4 as $key => $val) {
+    echo "$key = $val\n";
+}
 
 echo '<hr>';
 echo '<br>';
@@ -260,9 +288,10 @@ echo '<br>';
 echo 'asort';
 echo '<br>';
 
-echo '<pre>';
-print_r(asort($arr2));
-echo '</pre>';
+asort($arr4);
+foreach ($arr4 as $key => $val) {
+    echo "$key = $val\n";
+}
 
 echo '<hr>';
 echo '<br>';
@@ -271,28 +300,174 @@ echo '<br>';
 echo 'sort';
 echo '<br>';
 
+sort($arr4);
+foreach ($arr4 as $key => $val) {
+    echo "$key = $val\n";
+}
+
+echo '<hr>';
+echo '<br>';
+
+//rsort
+echo 'rsort';
+echo '<br>';
+
+rsort($arr4);
+foreach ($arr4 as $key => $val) {
+    echo "$key = $val\n";
+}
+
+echo '<hr>';
+echo '<br>';
+
+//array_combine
+echo 'array_combine';
+echo '<br>';
+
+$ar1 = array_combine($arr3, $arr5);
 echo '<pre>';
-print_r(sort($arr3));
+print_r($ar1);
+echo '</pre>';
+
+$ar2 = array_combine($arr5, $arr3);
+echo '<pre>';
+print_r($ar2);
 echo '</pre>';
 
 echo '<hr>';
 echo '<br>';
 
+//array_search
+echo 'array_search';
+echo '<br>';
 
+$key1 = array_search('red', $arr1);
+echo '$key1='.$key1;
+echo '<br>';
+$key2 = array_search(200, $arr4);
+echo '$key2='.$key2;
 
 echo '<hr>';
 echo '<br>';
 
-
-
-echo '<hr>';
+//array_shift
+echo 'array_shift';
 echo '<br>';
 
-
-
+$ar3 = array_shift($arr1);
 echo '<pre>';
-print_r();
+print_r($ar3);
 echo '</pre>';
+
+$ar4 = array_shift($arr3);
+echo '<pre>';
+print_r($ar4);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//array_unique
+echo 'array_unique';
+echo '<br>';
+
+$ar5 = array_unique($arr6);
+var_dump($ar5);
+echo '<pre>';
+print_r($ar5);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//array_unshift
+echo 'array_unshift';
+echo '<br>';
+
+array_unshift($arr4, 500, 800);
+echo '<pre>';
+print_r($arr4);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//array_flip
+echo 'array_flip';
+echo '<br>';
+
+$ar6 = array_flip($arr3);
+echo '<pre>';
+print_r($ar6);
+echo '</pre>';
+
+$ar7 = array_flip($arr4);
+echo '<pre>';
+print_r($ar7);
+echo '</pre>';
+
+$ar8 = array_flip($arr5);
+echo '<pre>';
+print_r($ar8);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//array_pop
+echo 'array_pop';
+echo '<br>';
+
+$ar9 = array_pop($arr1);
+echo '<pre>';
+print_r($ar9);
+echo '</pre>';
+
+$ar10 = array_pop($arr4);
+echo '<pre>';
+print_r($ar10);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//array_push
+echo 'array_push';
+echo '<br>';
+
+array_push($arr4, 900, 700);
+echo '<pre>';
+print_r($arr4);
+echo '</pre>';
+
+echo '<hr>';
+echo '<br>';
+
+//in_array
+echo 'in_array';
+echo '<br>';
+
+if (in_array('red', $arr1)) {
+    echo "наявний елемент red";
+}
+if (in_array(300, $arr4)) {
+    echo "наявний елемент 300";
+}
+
+echo '<hr>';
+echo '<br>';
+
+//list
+echo 'list';
+echo '<br>';
+
+list($aa, $bb, $cc) = $arr7;
+echo $aa + $bb + $cc;
+
+echo '<hr>';
+echo '<br>';
+
+
 
 echo '<hr>';
 echo '<br>';

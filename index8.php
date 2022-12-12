@@ -36,7 +36,6 @@ include_once 'inc/inc4.php';
 <br>
 <br>
 <br>
-<br>
 <hr>
 <hr>
 <hr>
