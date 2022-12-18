@@ -8,7 +8,7 @@ SELECT * FROM `up` WHERE ID = 1;
 SELECT * FROM `up` WHERE surname = 'K';
 
 SELECT * FROM `up` WHERE surname = 'H' AND spec = 'studen';
-SELECT * FROM `up` WHERE name = 'Taras' OR name = 'Olga';
+SELECT * FROM `up` WHERE `name` = 'Taras' OR `name` = 'Olga';
 SELECT * FROM `up` WHERE NOT surname = 'K';
 SELECT * FROM `up` WHERE NOT surname = 'K' AND NOT surname = 'H';
 
@@ -48,4 +48,8 @@ SELECT * FROM `up1` WHERE price BETWEEN 3 AND 7;
 SELECT * FROM `up1` WHERE price NOT BETWEEN 3 AND 7;
 SELECT * FROM `up1` WHERE unit BETWEEN 'kg' AND 'watt' ORDER BY unit;
 SELECT * FROM `up` WHERE date BETWEEN '2022-11-28' AND '2022-11-29';
+
+
+
+-- новий урок
 
