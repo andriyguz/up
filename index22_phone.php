@@ -35,7 +35,19 @@ require_once 'functions.php';
     //$key = array_search($seach, $book);
     //echo $key;
 
+    /*
+    if (isset($_POST)){
+        print("Имя: " . $_POST['name']);
+        print("<br>Прізвище: " . $_POST['surname']);
+        print("<br>Номер телефону: " . $_POST['phonenumber']);
+        print("<br>Коментар: " . $_POST['comment']);
+    }
+    */
+
     $book1 = file_get_contents('phonebook.txt');
+    echo '<br>';
+    print_r($book1);
+    echo '<br>';
     $pos = strpos($book1, $seach);
     if($pos === false){
         echo '<br>';
@@ -47,8 +59,24 @@ require_once 'functions.php';
         echo '<br>';
         copy('phonebook.txt', 'oldphonebook.txt');
         echo 'Змініть дані';
+        require_once 'index22_phone1.php';
+        // $arrbook = fopen('phonebook.txt', "a+");
+        // $arrbook1 = str_replace('phonenumber', 'seachphonenumber', $arrbook);
+        // fwrite($arrbook, $arrbook1);
+        // fclose($arrbook);
     }
 
+    
+
+    /*
+    foreach($_REQUEST as $key => $value){
+        echo $key;
+        echo ": " .$value;
+        echo "<br/>";
+    }
+    */
+
+    /*
     $arrbook = [];
     $i = 0;
     foreach($book as $user){
@@ -60,7 +88,9 @@ require_once 'functions.php';
     echo '<br>';
     print_r($arrbook);
     echo '<br>';
+    */
 
+    /*
     foreach($arrbook as $key1 => $user){
         foreach($user as $key2 => $us){
             if($seach == $us){
@@ -74,6 +104,7 @@ require_once 'functions.php';
             }
         }
     }
+    */
     
     
     /*
