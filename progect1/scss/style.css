@@ -1,0 +1,44 @@
+body .siteprogect1 {
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  width: 100%;
+  height: 100vh;
+}
+body .siteprogect1 header {
+  width: 100%;
+  height: 10vh;
+  grid-area: header;
+  background-color: rgb(146, 226, 146);
+}
+body .siteprogect1 header .row .col-sm-7 {
+  position: relative;
+}
+body .siteprogect1 header .row .col-sm-3 .container .row .col {
+  display: flex;
+}
+body .siteprogect1 header .row .col-sm-3 .container .row .col {
+  display: flex;
+}
+body .siteprogect1 header .row .col-sm-2 .showinsert {
+  position: relative;
+}
+body .siteprogect1 .allcontent_st {
+  width: 100%;
+  height: 80vh;
+  grid-area: content;
+}
+body .siteprogect1 .allcontent_in {
+  width: 100%;
+  height: auto;
+  grid-area: content;
+}
+body .siteprogect1 .allcontent_in .seach {
+  width: 100%;
+  height: 10vh;
+}
+body .siteprogect1 footer {
+  width: 100%;
+  height: 10vh;
+  grid-area: footer;
+  background-color: rgb(146, 226, 146);
+}/*# sourceMappingURL=style.css.map */

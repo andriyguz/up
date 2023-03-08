@@ -1,37 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php session_start(); ?>
+<?php require_once 'components/header.php'; ?>
+<?php require_once 'conn.php'; ?>
+<?php require_once 'functions.php'; ?>
+
+<div class="allcontent_in">
+
     <?php
-        $dbp = @mysqli_connect('127.0.0.1', 'root', '', 'progect1', 3306 ) or die ('error connection');
-        if(!$dbp) die(mysqli_connect_error());
-        mysqli_set_charset($dbp, "utf8") or die('no connection dbp');
         $sql = "SELECT * FROM `dbp`";
         $result = mysqli_query($dbp, $sql);
-        echo '<pre>';
-        print_r($result);
-        echo '</pre>';
-
-        //$date = mysqli_fetch_all($result);
-        //$date = mysqli_fetch_all($result, MYSQLI_ASSOC);
-        //$date = mysqli_fetch_all($result, MYSQLI_NUM);
-        //$date = mysqli_fetch_all($result, MYSQLI_BOTH);
-        //echo '<pre>';
-        //print_r($date);
-        //echo '</pre>';
-
-        // if ($result->num_rows > 0) {
-        //     while($row = $result->fetch_assoc()) {
-        //         echo "<br> indexcity: ". $row["indexcity"]. " - city: ". $row["city"]. " - address: ". $row["address"].  "<br>";
-        //     }
-        // } else {
-        //     echo "0 results";
-        // }
     ?>
-</body>
-</html>
+
+    <?php
+        $seach = $_POST['seach'];
+        $sqlseach = "SELECT * FROM `dbp` WHERE indexcity LIKE '%$seach%' OR city LIKE '%$seach%' OR address LIKE '%$seach%'";
+        $result = mysqli_query($dbp, $sqlseach);
+    ?>
+
+    <?php
+
+    ?>
+
+    <table>
+        <tr>
+            <th>indexcity</th>
+            <th>city</th>
+            <th>address</th>
+            <th>&#9998;</th>
+            <th>&#10006;</th>
+        </tr>
+
+        <?php
+            showtable($result);     
+        ?>
+
+    </table>
+
+</div>
+     
+<?php require_once 'components/footer.php'; ?>
