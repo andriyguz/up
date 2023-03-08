@@ -5,7 +5,7 @@
 ?>
 
 <div>
-    <form action="/progect1/components/insertindex1.php" method="POST">
+    <form action="" method="POST">
         <div>
             <label>indexcity<br />
                 <input type="text" name="col1"/>
@@ -26,3 +26,9 @@
         </div>
     </form>
 </div>
+
+<?php
+    if(!empty($_POST['col1'])){
+        showinsert();
+    }
+?>

@@ -9,7 +9,7 @@
     $returnresult = showtable1($result);
 ?>
 
-<form action="/progect1/components/updateindex1.php" method="POST">
+<form action="" method="POST">
     <div>
         <label>indexcity<br />
             <input type="text" name="col1" value="<?= $returnresult['indexcity']; ?>"/>
@@ -32,3 +32,9 @@
         <button type="submit">Редагувати</button>
     </div>
 </form>
+
+<?php
+    if(!empty($_POST['col1'])){
+        showupdate();
+    }
+?>

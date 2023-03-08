@@ -9,7 +9,7 @@
     $returnresult = showtable1($result);
 ?>
 
-<form action="/progect1/components/deleteindex1.php" method="POST">
+<form action="" method="POST">
     <div>
         <label>indexcity<br />
             <input type="text" name="col1" value="<?= $returnresult['indexcity']; ?>"/>
@@ -29,3 +29,9 @@
         <button type="submit">Видалити</button>
     </div>
 </form>
+
+<?php
+    if(!empty($_POST['col1'])){
+        showdelete();
+    }
+?>
