@@ -1,0 +1,59 @@
+body{
+    .siteprogect1{
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'content'
+        'footer';
+        width: 100%;
+        height: 100vh;
+        header{
+            width: 100%;
+            height: 10vh;
+            grid-area: header;
+            background-color: rgb(146, 226, 146);
+            .row{
+                .col-sm-7{
+                    position: relative;
+                }
+                .col-sm-3{
+                    .container{
+                        .row{
+                            .col{
+                                display: flex;
+                            }
+                            .col{
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+                .col-sm-2{
+                    .showinsert{
+                        position: relative;
+                    }
+                }
+            }
+        }
+        .allcontent_st{
+            width: 100%;
+            height: 80vh;
+            grid-area: content;
+        }
+        .allcontent_in{
+            width: 100%;
+            height: auto;
+            grid-area: content;
+            .seach{
+                width: 100%;
+                height: 10vh;
+            }
+        }
+        footer{
+            width: 100%;
+            height: 10vh;
+            grid-area: footer;
+            background-color: rgb(146, 226, 146);
+        }
+    }
+}

@@ -16,10 +16,6 @@
         $result = mysqli_query($dbp, $sqlseach);
     ?>
 
-    <?php
-
-    ?>
-
     <table>
         <tr>
             <th>indexcity</th>
